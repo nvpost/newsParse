@@ -1,23 +1,26 @@
 kip = [
     {
+        'category':'Кип',
+        'place':'ru',
+        'name':'Контравт',
         'url':"https://www.contravt.ru/news-KontrAvt",
-        'root_selector':{
+        'root_':{
             'selector':"table.cell_standart_icon",
             'position':0
         },
-        'items_selector':{
+        'items_':{
             'selector': "td.cell_standart_icon_text",
             'position': 0
         },
-        'date_selector':{
+        'date_':{
             'selector': "span.date_standart.date",
             'position': 0
         },
-        'title_selector':{
+        'title_':{
             'selector': "a.menuchilds",
             'position': 1
         },
-        'link_selector':{
+        'link_':{
             'selector': "a.short.detail",
             'position': 0
         }

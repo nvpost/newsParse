@@ -1,28 +1,32 @@
 from bs4 import BeautifulSoup
-
 import requests
 
-url = "https://www.contravt.ru/news-KontrAvt"
-root_selector = "table.cell_standart_icon"
-items_selector = 'td.cell_standart_icon_text'
+from data import base
 
-date_selector = "span.date_standart.date"
-title_selector = "a.menuchilds"
-link_selector = "a.short.detail"
+# url = "https://www.contravt.ru/news-KontrAvt"
+# root_selector = "table.cell_standart_icon"
+# items_selector = 'td.cell_standart_icon_text'
+#
+# date_selector = "span.date_standart.date"
+# title_selector = "a.menuchilds"
+# link_selector = "a.short.detail"
 
-page = requests.get(url)
+
+el = base.kip[0]
+page = requests.get(el['url'])
 
 soup = BeautifulSoup(page.text, "html.parser")
 
-rootElem = soup.select_one(root_selector)
+
+rootElem = soup.select(el['root_selector']['selector'])[el['root_selector']['position']]
 
 
-items = soup.select(items_selector)
+items = soup.select(el['items_selector']['selector'])
 
 for i in items:
-    date = i.select_one(date_selector).text
-    title = i.select(title_selector)[1].text
-    link = i.select_one(link_selector).get('href')
+    date = i.select(el['date_selector']['selector'])[el['date_selector']['position']].text
+    title = i.select(el['title_selector']['selector'])[el['title_selector']['position']].text
+    link = i.select(el['link_selector']['selector'])[el['link_selector']['position']].get('href')
 
     print(date)
     print(title)

@@ -1,8 +1,6 @@
 import sqlite3
 
 connection = sqlite3.connect('News.db')
-
-
 cursor = connection.cursor()
 
 

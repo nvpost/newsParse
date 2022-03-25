@@ -1,9 +1,12 @@
 from bs4 import BeautifulSoup
 import requests
 import sqlite3
+import func
+
+from sql import send_data_sql
 
 from data import kip_ru
-import func
+
 
 
 connection = sqlite3.connect('News.db')

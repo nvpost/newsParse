@@ -1,1 +1,6 @@
 .idea
+__pycache__
+data/__pycache__/
+sql/__pycache__/
+sql/config.py
+sqlite/News.db

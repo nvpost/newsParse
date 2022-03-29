@@ -5,6 +5,7 @@ data = [
         'id': 1,
         'name':'Контравт',
         'url':"https://www.contravt.ru/news-KontrAvt",
+        'date_format': '%d.%m.%Y',
         'root_':{
             'selector':"table.cell_standart_icon",
             'position':0
@@ -32,6 +33,7 @@ data = [
         'id': 2,
         'name':'Atonics',
         'url':"https://www.autonics.com/company/ntt/news/list",
+        'date_format': '%d.%m.%Y',
         'root_':{
             'selector':"ul.list-wrap",
             'position':0
@@ -64,6 +66,7 @@ data = [
         'id': 3,
         'name': 'Deltronics',
         'url': "https://deltronics.ru/news/",
+        'date_format': '%d.%m.%Y',
         'root_': {
             'selector': "div.row.row-30",
             'position': 0
@@ -91,6 +94,7 @@ data = [
         'name': 'MZTA',
         'id': 4,
         'url': "https://www.mzta.ru/o-kompanii/novosti",
+        'date_format': '%d.%m.%Y',
         'root_': {
             'selector': "ul.blog",
             'position': 0
@@ -118,6 +122,7 @@ data = [
         'name': 'Трид',
         'id': 5,
         'url': "https://tridpm.ru/news",
+        'date_format': '%d.%m.%Y',
         'root_': {
             'selector': "div.news-posts-wrapper",
             'position': 0
@@ -145,6 +150,7 @@ data = [
         'name': 'Autonics',
         'id': 6,
         'url': "https://www.ascontecnologic.com/блог/?lang=ru",
+        'date_format': '%d.%m.%Y',
         'root_': {
             'selector': "div.slide-entry-wrap",
             'position': 0
@@ -172,6 +178,7 @@ data = [
         'name': 'elemer',
         'id': 7,
         'url': "https://www.elemer.ru/news/",
+        'date_format': '%d.%m.%Y',
         'root_': {
             'selector': "div.news-list",
             'position': 0
@@ -200,6 +207,7 @@ data = [
         'name': 'termodat',
         'id': 8,
         'url': "https://termodat.ru/information/news/",
+        'date_format': '%d.%m.%Y',
         'root_': {
             'selector': ".bx_news",
             'position': 0

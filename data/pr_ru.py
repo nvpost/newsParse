@@ -4,6 +4,7 @@ data = [
         'place': 'com',
         'name': 'EFK',
         'url': "https://ekfgroup.com/about/news",
+        'url_prefix': 'https://ekfgroup.com',
         'root_': {
             'selector': "section.section-news",
             'position': 0
@@ -28,8 +29,9 @@ data = [
     {
         'category': 'ПР',
         'place': 'com',
-        'name': 'Oni_новости',
+        'name': 'Oni',
         'url': "https://oni-system.com/press-centr/",
+        'url_prefix': 'https://oni-system.com',
         'root_': {
             'selector': "div.main_content",
             'position': 0
@@ -56,6 +58,7 @@ data = [
         'place': 'com',
         'name': 'Oni_IEK',
         'url': "https://oni-system.com/press-centr/novosti-IEK-GROUP.php",
+        'url_prefix': 'https://oni-system.com',
         'root_': {
             'selector': "div.main_content",
             'position': 0
@@ -83,19 +86,19 @@ data = [
         'name': 'Segnetics',
         'url': "https://segnetics.com/ru/news",
         'root_': {
-            'selector': "table",
-            'position': 0
+            'selector': "table.main_table table",
+            'position': 1
         },
         'items_': {
-            'selector': "table.main_table tbody tr td table tbody tr td table tbody tr:nth-child(odd):nth-child(-n+7)",
+            'selector': "td",
             'position': 0
         },
         'date_': {
-            'selector': "div.news_item_date",
+            'selector': ".news_item_date",
             'position': 0
         },
         'title_': {
-            'selector': "div.news_item_header",
+            'selector': ".news_item_header",
             'position': 0
         },
         'link_': False
@@ -106,52 +109,52 @@ data = [
         'name': 'Siemens',
         'url': "https://ru-siemens.com/news/",
         'root_': {
-            'selector': "div.row",
-            'position': 0
+             'selector': "div.news__grid",
+             'position': 0
         },
         'items_': {
-            'selector': "div.col-md-6",
-            'position': 0
+             'selector': "div.col-md-6",
+             'position': 0
         },
         'date_': {
-            'selector': "span.news__item-time",
-            'position': 0
+             'selector': "span.news__item-time",
+             'position': 0
         },
         'title_': {
-            'selector': "h2.news__item-title",
-            'position': 0
+             'selector': "h2.news__item-title",
+             'position': 0
         },
         'link_': {
-            'selector': "a.news__item",
-            'position': 0
+             'selector': "a.news__item",
+             'position': 0
         }
     },
-    {
-        'category': 'ПР',
-        'place': 'com',
-        'name': 'Danfoss',
-        'url': "https://www.danfoss.com/ru-ru/about-danfoss/news/?sort=startDate_desc",
-        'root_': {
-            'selector': "div.list__wrapper",
-            'position': 0
-        },
-        'items_': {
-            'selector': "ul.news-list-items",
-            'position': 0
-        },
-        'date_': {
-            'selector': "div.tile__text-details",
-            'position': 0
-        },
-        'title_': {
-            'selector': "div.tile__text-title",
-            'position': 0
-        },
-        'link_': {
-            'selector': "a.tile__image-link",
-            'position': 0
-        }
-    },
+    # { //React
+    #     'category': 'ПР',
+    #     'place': 'com',
+    #     'name': 'Danfoss',
+    #     'url': "https://www.danfoss.com/ru-ru/about-danfoss/news/?sort=startDate_desc",
+    #     'root_': {
+    #         'selector': "div.list__wrapper",
+    #         'position': 0
+    #     },
+    #     'items_': {
+    #         'selector': "ul.news-list-items",
+    #         'position': 0
+    #     },
+    #     'date_': {
+    #         'selector': "div.tile__text-details",
+    #         'position': 0
+    #     },
+    #     'title_': {
+    #         'selector': "div.tile__text-title",
+    #         'position': 0
+    #     },
+    #     'link_': {
+    #         'selector': "a.tile__image-link",
+    #         'position': 0
+    #     }
+    # },
     {
         'category': 'ПР',
         'place': 'ru',
@@ -182,32 +185,6 @@ data = [
     {
         'category': 'ПР',
         'place': 'ru',
-        'name': 'Агава',
-        'url': "https://www.kb-agava.ru/index.php?route=information/news",
-        'root_': {
-            'selector': "div#content",
-            'position': 0
-        },
-        'items_': {
-            'selector': "div.news_list_wrap",
-            'position': 0
-        },
-        'date_': {
-            'selector': "div.news_date",
-            'position': 0
-        },
-        'title_': {
-            'selector': "div.news_title",
-            'position': 0
-        },
-        'link_': {
-            'selector': "div.news_title a",
-            'position': 0
-        }
-    },
-    {
-        'category': 'ПР',
-        'place': 'ru',
         'name': 'Omron',
         'url': "https://industrial.omron.ru/ru/news-events/news",
         'root_': {
@@ -231,7 +208,60 @@ data = [
             'position': 0
         }
     },
-
+    {
+        'category': 'ПР',
+        'place': 'ru',
+        'name': 'Carel',
+        'url': "https://ru-carel.com/shopnews/",
+        'url_prefix': '',
+        'root_': {
+            'selector': "ul.news__list",
+            'position': 0
+        },
+        'items_': {
+            'selector': "li.news__list-item",
+            'position': 0
+        },
+        'date_': {
+            'selector': "span.news__date",
+            'position': 0
+        },
+        'title_': {
+            'selector': "span.news__title",
+            'position': 0
+        },
+        'link_': {
+            'selector': "a.news__link",
+            'position': 0
+        }
+    },
+    {
+        'category': 'ПР',
+        'place': 'ru',
+        'name': 'Агава',
+        'url': "https://www.kb-agava.ru/index.php?route=information/news",
+        'url_prefix': '',
+        'root_': {
+            'selector': "div#content",
+            'position': 0
+        },
+        'items_': {
+            'selector': "div.news_list_wrap",
+            'position': 0
+        },
+        'date_': {
+            'selector': "div.news_date",
+            'position': 0
+        },
+        'title_': {
+            'selector': "div.news_title",
+            'position': 0
+        },
+        'link_': {
+            'selector': "div.news_title a",
+            'position': 0
+        }
+    },
     {
         'category': 'ПР',
         'place': 'com',

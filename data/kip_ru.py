@@ -34,6 +34,7 @@ data = [
         'name':'Atonics',
         'url':"https://www.autonics.com/company/ntt/news/list",
         'url_prefix': 'https://www.autonics.com/company/ntt/news/view/',
+        'date_format':'%Y.%m.%d',
         'root_':{
             'selector':"ul.list-wrap",
             'position':0
@@ -63,6 +64,7 @@ data = [
 
     {
         'category': 'Кип',
+        'dop_cat': ['Кип','ОП', 'СП', 'ПЧВ'],
         'place': 'ru',
         'id': 3,
         'name': 'Deltronics',
@@ -148,7 +150,7 @@ data = [
         'name': 'Autonics',
         'id': 6,
         'url': "https://www.ascontecnologic.com/блог/?lang=ru",
-        
+
         'root_': {
             'selector': "div.slide-entry-wrap",
             'position': 0

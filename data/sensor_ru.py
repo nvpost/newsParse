@@ -1,11 +1,12 @@
 data = [
     {
+        # Ставим дату как есть
         'category': 'Датчики',
         'place': 'ru',
         'id': '0',
         'name': 'ТЕККНОУ',
         'url': "https://www.tek-know.ru/news/",
-        'url-prefix': 'https://www.tek-know.ru',
+        'url_prefix': 'https://www.tek-know.ru',
         'root_': {
             'selector': "div.news-list",
             'position': 0
@@ -14,10 +15,11 @@ data = [
             'selector': "div.item",
             'position': 0
         },
-        'date_': {
-            'selector': "span.date",
-            'position': 0
-        },
+        'date_': False,
+        # 'date_': {
+        #     'selector': "span.date",
+        #     'position': 0
+        # },
         'title_': {
             'selector': "h3",
             'position': 0
@@ -33,7 +35,7 @@ data = [
         'id': '1',
         'name': 'Seitron',
         'url': "https://www.seitron.ru/novosti.html",
-        'url-prefix': 'https://www.seitron.ru/',
+        'url_prefix': 'https://www.seitron.ru/',
         'root_': {
             'selector': "div.blog-content",
             'position': 0
@@ -42,10 +44,11 @@ data = [
             'selector': "div.items-row",
             'position': 0
         },
-        'date_': {
-            'selector': "",
-            'position': 0
-        },
+        # 'date_': {
+        #     'selector': "",
+        #     'position': 0
+        # },
+        'date_': False,
         'title_': {
             'selector': "h2",
             'position': 0
@@ -59,9 +62,9 @@ data = [
         'category': 'Датчики',
         'place': 'com',
         'id': '2',
-        'name': 'Endress+Hauser',
+        'name': 'Endress',
         'url': "https://www.ru.endress.com/ru/media-center/newsroom",
-        'url-prefix': 'https://www.ru.endress.com',
+        'url_prefix': 'https://www.ru.endress.com',
         'root_': {
             'selector': "ul.eh-search-result--results-items",
             'position': 0
@@ -89,7 +92,7 @@ data = [
         'id': '3',
         'name': 'Phoenix contact',
         'url': "https://www.phoenixcontactpro.ru/about/news/",
-        'url-prefix': 'https://www.phoenixcontactpro.ru',
+        'url_prefix': 'https://www.phoenixcontactpro.ru',
         'root_': {
             'selector': "div.content-block",
             'position': 0
@@ -112,12 +115,13 @@ data = [
         }
     },
         {
+        #     Без даты
         'category': 'Датчики',
         'place': 'com',
         'id': '4',
-        'name': 'PEPPERL + FUCHS',
+        'name': 'PEPPERL_FUCHS',
         'url': "https://www.pepperl-fuchs.com/russia/ru/22690.htm",
-        'url-prefix': 'https://www.pepperl-fuchs.com',
+        'url_prefix': 'https://www.pepperl-fuchs.com',
         'root_': {
             'selector': "div.container_news_box",
             'position': 0
@@ -139,41 +143,41 @@ data = [
             'position': 0
         }
     },
-        {
-        'category': 'Датчики',
-        'place': 'com',
-        'id': '5',
-        'name': 'LEFOO',
-        'url': "https://www.lefoo.com/news",
-        'url-prefix': '',
-        'root_': {
-            'selector': "ul.industify_fn_postlist",
-            'position': 0
-        },
-        'items_': {
-            'selector': "div.content_holder",
-            'position': 0
-        },
-        'date_': {
-            'selector': "p.t_header",
-            'position': 0
-        },
-        'title_': {
-            'selector': "h3",
-            'position': 0
-        },
-        'link_': {
-            'selector': "a",
-            'position': 0
-        }
-    },
+    #     {
+    #     'category': 'Датчики',
+    #     'place': 'com',
+    #     'id': '5',
+    #     'name': 'LEFOO',
+    #     'url': "https://www.lefoo.com/news",
+    #     'url_prefix': '',
+    #     'root_': {
+    #         'selector': "ul.industify_fn_postlist",
+    #         'position': 0
+    #     },
+    #     'items_': {
+    #         'selector': "div.content_holder",
+    #         'position': 0
+    #     },
+    #     'date_': {
+    #         'selector': "p.t_header",
+    #         'position': 0
+    #     },
+    #     'title_': {
+    #         'selector': "h3",
+    #         'position': 0
+    #     },
+    #     'link_': {
+    #         'selector': "a",
+    #         'position': 0
+    #     }
+    # },
         {
         'category': 'Датчики',
         'place': 'com',
         'id': '6',
         'name': 'Huba Control',
         'url': "https://www.hubacontrol.com/ru/biznes/novosti",
-        'url-prefix': 'https://www.hubacontrol.com',
+        'url_prefix': 'https://www.hubacontrol.com',
         'root_': {
             'selector': "div.news-list-wrapper",
             'position': 0
@@ -199,13 +203,14 @@ data = [
         'category': 'Датчики',
         'place': 'com',
         'id': '7',
-        'name': 'Е+Е',
+        'name': 'Е_Е',
         'url': "https://www.epluse.com/press/press-releases/",
-        'url-prefix': 'https://www.epluse.com',
-        'root_': {
-            'selector': "ul.news-list-container",
-            'position': 0
-        },
+        'url_prefix': 'https://www.epluse.com',
+        # 'root_': {
+        #     'selector': "ul.news-list-container",
+        #     'position': 0
+        # },
+        'root_': False,
         'items_': {
             'selector': "li.news-list-item",
             'position': 0
@@ -223,41 +228,43 @@ data = [
             'position': 0
         }
     },
-        {
-        'category': 'Датчики',
-        'place': 'ru',
-        'id': '8',
-        'name': 'Элемер',
-        'url': "https://www.elemer.ru/news/",
-        'url-prefix': 'https://www.elemer.ru',
-        'root_': {
-            'selector': "div.news-list",
-            'position': 0
-        },
-        'items_': {
-            'selector': "div.news-item",
-            'position': 0
-        },
-        'date_': {
-            'selector': "span",
-            'position': 0
-        },
-        'title_': {
-            'selector': "a",
-            'position': 0
-        },
-        'link_': {
-            'selector': "a",
-            'position': 0
-        }
-    },
+    #     {
+    #     #     JS
+    #     'category': 'Датчики',
+    #     'place': 'ru',
+    #     'id': '8',
+    #     'name': 'Элемер',
+    #     'url': "https://www.elemer.ru/news/",
+    #     'url_prefix': 'https://www.elemer.ru',
+    #     # 'root_': {
+    #     #     'selector': "div.news-list",
+    #     #     'position': 0
+    #     # },
+    #     'root_':False,
+    #     'items_': {
+    #         'selector': "div.news-item",
+    #         'position': 0
+    #     },
+    #     'date_': {
+    #         'selector': "span",
+    #         'position': 0
+    #     },
+    #     'title_': {
+    #         'selector': "a",
+    #         'position': 0
+    #     },
+    #     'link_': {
+    #         'selector': "a",
+    #         'position': 0
+    #     }
+    # },
         {
         'category': 'Датчики',
         'place': 'ru',
         'id': '9',
         'name': 'Эксис',
         'url': "https://www.eksis.ru/news/company/",
-        'url-prefix': 'https://www.eksis.ru',
+        'url_prefix': 'https://www.eksis.ru',
         'root_': {
             'selector': "div.centcol ",
             'position': 0
@@ -280,26 +287,28 @@ data = [
         }
     },
         {
+        #     Ограниченое количество новостей
         'category': 'Датчики',
         'place': 'ru',
         'id': '10',
         'name': 'BD Sensors',
         'url': "https://www.bdsensors.ru/ru/kompaniya/novosti-kompanii/",
-        'url-prefix': 'https://www.bdsensors.ru/',
-        'root_': {
-            'selector': "div.news-list-view",
-            'position': 0
-        },
+        'url_prefix': 'https://www.bdsensors.ru/',
+        # 'root_': {
+        #     'selector': "div.news",
+        #     'position': 0
+        # },
+        'root_': False,
         'items_': {
-            'selector': "div.article",
+            'selector': ".article",
             'position': 0
         },
         'date_': {
-            'selector': "div.news-list-date",
+            'selector': ".news-list-date",
             'position': 0
         },
         'title_': {
-            'selector': "h3",
+            'selector': "a",
             'position': 0
         },
         'link_': {
@@ -313,7 +322,7 @@ data = [
         'id': '11',
         'name': 'APLISENS',
         'url': "https://www.aplisens.ru/news/",
-        'url-prefix': 'https://www.aplisens.ru',
+        'url_prefix': 'https://www.aplisens.ru',
         'root_': {
             'selector': "div.row",
             'position': 0
@@ -341,7 +350,7 @@ data = [
         'id': '12',
         'name': 'Аналитприбор',
         'url': "https://www.analitpribor-smolensk.ru/company/novosti/",
-        'url-prefix': 'https://www.analitpribor-smolensk.ru',
+        'url_prefix': 'https://www.analitpribor-smolensk.ru',
         'root_': {
             'selector': "div.news-list",
             'position': 0
@@ -397,7 +406,7 @@ data = [
         'id': '14',
         'name': 'Vega',
         'url': "https://vega-rus.ru/news/",
-        'url-prefix': 'https://vega-rus.ru',
+        'url_prefix': 'https://vega-rus.ru',
         'root_': {
             'selector': "div.news-list",
             'position': 0
@@ -423,15 +432,16 @@ data = [
         'category': 'Датчики',
         'place': 'ru',
         'id': '15',
-        'name': 'Vega',
+        'name': 'Вакууммаш',
         'url': "https://vakuummash.ru/category/press-center/",
         'url-prefix': '',
-        'root_': {
-            'selector': "div.news-block",
-            'position': 0
-        },
+        # 'root_': {
+        #     'selector': "div.news-block",
+        #     'position': 0
+        # },
+        'root_':False,
         'items_': {
-            'selector': "div.news-block",
+            'selector': "div.item",
             'position': 0
         },
         'date_': {
@@ -439,7 +449,7 @@ data = [
             'position': 0
         },
         'title_': {
-            'selector': "h3",
+            'selector': "a.d-block",
             'position': 0
         },
         'link_': {
@@ -481,7 +491,7 @@ data = [
         'id': '17',
         'name': 'Русавтоматизация',
         'url': "https://rusautomation.ru/company/news/",
-        'url-prefix': 'https://rusautomation.ru',
+        'url_prefix': 'https://rusautomation.ru',
         'root_': {
             'selector': "div.news-blog-custom",
             'position': 0
@@ -504,12 +514,13 @@ data = [
         }
     },
         {
+        #     Без даты
         'category': 'Датчики',
         'place': 'ru',
         'id': '18',
         'name': 'Росма',
         'url': "https://rosma.spb.ru/news/",
-        'url-prefix': 'https://rosma.spb.ru/',
+        'url_prefix': 'https://rosma.spb.ru/',
         'root_': {
             'selector': "div.news",
             'position': 0
@@ -537,7 +548,7 @@ data = [
         'id': '19',
         'name': 'РИЗУР',
         'url': "https://rizur.ru/company/news/",
-        'url-prefix': 'https://rizur.ru',
+        'url_prefix': 'https://rizur.ru',
         'root_': {
             'selector': "div.news-list",
             'position': 0
@@ -566,10 +577,11 @@ data = [
         'name': 'Рэлсиб',
         'url': "https://relsib.com/news",
         'url-prefix': '',
-        'root_': {
-            'selector': "div.col-md-12",
-            'position': 0
-        },
+        # 'root_': {
+        #     'selector': "div.col-md-12",
+        #     'position': 0
+        # },
+        'root_':False,
         'items_': {
             'selector': "div.news",
             'position': 0
@@ -593,7 +605,7 @@ data = [
         'id': '21',
         'name': 'Raimet',
         'url': "https://raimet.ru/information/news",
-        'url-prefix': 'https://raimet.ru',
+        'url_prefix': 'https://raimet.ru',
         'root_': {
             'selector': "div.swiper-wrapper",
             'position': 0
@@ -621,7 +633,7 @@ data = [
         'id': '22',
         'name': 'Pribor-r',
         'url': "https://pribor-r.ru/news/",
-        'url-prefix': 'https://pribor-r.ru',
+        'url_prefix': 'https://pribor-r.ru',
         'root_': {
             'selector': "ul.news-list",
             'position': 0
@@ -649,7 +661,7 @@ data = [
         'id': '23',
         'name': 'Pulsar',
         'url': "https://pulsarm.ru/o-kompanii/novosti/",
-        'url-prefix': 'https://pulsarm.ru',
+        'url_prefix': 'https://pulsarm.ru',
         'root_': {
             'selector': "div.section-news",
             'position': 0
@@ -658,8 +670,9 @@ data = [
             'selector': "div.news",
             'position': 0
         },
+        # 'date_': False,
         'date_': {
-            'selector': "div.date",
+            'selector': "div.date false",
             'position': 0
         },
         'title_': {
@@ -675,9 +688,9 @@ data = [
         'category': 'Датчики',
         'place': 'ru',
         'id': '24',
-        'name': 'Tkafag («Полтраф СНГ»)',
+        'name': 'Полтраф СНГ',
         'url': "https://poltraf.ru/about/news/",
-        'url-prefix': 'https://poltraf.ru',
+        'url_prefix': 'https://poltraf.ru',
         'root_': {
             'selector': "div.s_4",
             'position': 0
@@ -733,7 +746,7 @@ data = [
         'id': '25',
         'name': 'Мераприбор',
         'url': "https://merapribor.ru/info/news/",
-        'url-prefix': 'https://merapribor.ru',
+        'url_prefix': 'https://merapribor.ru',
         'root_': {
             'selector': "div.items",
             'position': 0
@@ -759,9 +772,9 @@ data = [
         'category': 'Датчики',
         'place': 'ru',
         'id': '26',
-        'name': 'Elhart, Klay (Кип-сервис)',
+        'name': 'Кип-сервис',
         'url': "https://kipservis.ru/news",
-        'url-prefix': 'https://kipservis.ru',
+        'url_prefix': 'https://kipservis.ru',
         'root_': {
             'selector': "div.cards",
             'position': 0
@@ -771,7 +784,7 @@ data = [
             'position': 0
         },
         'date_': {
-            'selector': "",
+            'selector': "small",
             'position': 0
         },
         'title_': {
@@ -784,6 +797,7 @@ data = [
         }
     },
         {
+        #     Без даты
         'category': 'Датчики',
         'place': 'ru',
         'id': '27',
@@ -799,7 +813,7 @@ data = [
             'position': 0
         },
         'date_': {
-            'selector': "div.info-content__text_bold",
+            'selector': "div.info-content__text_bold false",
             'position': 0
         },
         'title_': {
@@ -817,7 +831,7 @@ data = [
         'id': '28',
         'name': 'ИЗМЕРКОН («Измерение и Контроль») KELLER',
         'url': "https://izmerkon.ru/about/news/",
-        'url-prefix': 'https://izmerkon.ru',
+        'url_prefix': 'https://izmerkon.ru',
         'root_': {
             'selector': "div.rows",
             'position': 0
@@ -840,12 +854,13 @@ data = [
         }
     },
         {
+        #     Без даты
         'category': 'Датчики',
         'place': 'su',
         'id': '29',
-        'name': 'E+E',
+        'name': 'E_E su',
         'url': "https://epluse.su/news/news.htm",
-        'url-prefix': 'https://epluse.su',
+        'url_prefix': 'https://epluse.su',
         'root_': {
             'selector': "div.akc",
             'position': 0
@@ -868,12 +883,13 @@ data = [
         }
     },
         {
+        #     Без даты
         'category': 'Датчики',
         'place': 'ru',
         'id': '30',
         'name': 'Dwyer',
         'url': "https://dwyer.ru/nashi-novosti",
-        'url-prefix': 'https://dwyer.ru',
+        'url_prefix': 'https://dwyer.ru',
         'root_': {
             'selector': "div.blog",
             'position': 0
@@ -929,7 +945,7 @@ data = [
         'id': '32',
         'name': 'Компания «БД»',
         'url': "https://bdrosma.ru/news/",
-        'url-prefix': 'https://bdrosma.ru/',
+        'url_prefix': 'https://bdrosma.ru/',
         'root_': {
             'selector': "main.news_list",
             'position': 0
@@ -957,7 +973,7 @@ data = [
         'id': '33',
         'name': 'Альбатрос',
         'url': "https://albatros.ru/news/archive/",
-        'url-prefix': 'https://albatros.ru',
+        'url_prefix': 'https://albatros.ru',
         'root_': {
             'selector': "div.front_news_list",
             'position': 0
@@ -980,22 +996,25 @@ data = [
         }
     },
         {
+        #     Хитрая дата
         'category': 'Датчики',
         'place': 'ru',
         'id': '34',
         'name': 'Yokogawa',
         'url': "http://www.yokogawa.ru/news/",
-        'url-prefix': 'http://www.yokogawa.ru',
-        'root_': {
-            'selector': "div.news_list",
-            'position': 0
-        },
+        'url_prefix': 'http://www.yokogawa.ru',
+        # 'root_': {
+        #     'selector': "div.news_list",
+        #     'position': 0
+        # },
+            'root_': False,
         'items_': {
-            'selector': "div.anons",
+            'selector': "div.news_list div",
             'position': 0
         },
         'date_': {
-            'selector': "div.date",
+
+            'selector': "div.news_list div.date",
             'position': 0
         },
         'title_': {
@@ -1013,7 +1032,7 @@ data = [
         'id': '35',
         'name': 'Термоконт',
         'url': "http://www.termiko.ru/news/",
-        'url-prefix': 'http://www.termiko.ru',
+        'url_prefix': 'http://www.termiko.ru',
         'root_': {
             'selector': "div.news-list",
             'position': 0
@@ -1041,13 +1060,15 @@ data = [
         'id': '36',
         'name': 'Эталон Омск',
         'url': "http://www.omsketalon.ru/novosti",
-        'url-prefix': 'http://www.omsketalon.ru',
-        'root_': {
-            'selector': "div.col-md_news",
-            'position': 0
-        },
+        'url_prefix': 'http://www.omsketalon.ru',
+        'date_format':'%d.%m.%y',
+        # 'root_': {
+        #     'selector': "div.col-md_news",
+        #     'position': 0
+        # },
+        'root_': False,
         'items_': {
-            'selector': "div.col-md_news",
+            'selector': ".block_news_fon",
             'position': 0
         },
         'date_': {
@@ -1069,7 +1090,8 @@ data = [
         'id': '37',
         'name': 'ООО «Стэнли» (Корунд)',
         'url': "https://stenli.ru/novosti",
-        'url-prefix': 'https://stenli.ru/',
+        'url_prefix': 'https://stenli.ru/',
+        'date_format':'%d.%m.%Y',
         'root_': {
             'selector': "div.g-article-list",
             'position': 0
@@ -1120,12 +1142,13 @@ data = [
         }
     },
         {
+        #     без даты
         'category': 'Датчики',
         'place': 'com',
         'id': '39',
         'name': 'Мида',
         'url': "http://midaus.com/",
-        'url-prefix': 'http://midaus.com',
+        'url_prefix': 'http://midaus.com',
         'root_': {
             'selector': "div.allnews",
             'position': 0
@@ -1148,6 +1171,7 @@ data = [
         }
     },
         {
+        #     Без даты
         'category': 'Датчики',
         'place': 'ru',
         'id': '40',
@@ -1176,22 +1200,24 @@ data = [
         }
     },
     {
+        # Таблицы
         'category': 'Датчики',
         'place': 'ru',
         'id': '',
         'name': 'Real Lab (РФ)11',
         'url': "https://www.reallab.ru/news/",
-        'url-prefix': '',
-        'root_': {
-            'selector': "div.naviText",
-            'position': 0
-        },
+        'url_prefix': 'https://',
+        # 'root_': {
+        #     'selector': "div.naviText",
+        #     'position': 0
+        # },
+        'root_': False,
         'items_': {
-            'selector': "p.mainContent",
+            'selector': "table",
             'position': 0
         },
         'date_': {
-            'selector': "strong",
+            'selector': "strong false",
             'position': 0
         },
         'title_': {

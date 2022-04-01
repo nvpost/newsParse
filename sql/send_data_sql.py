@@ -17,6 +17,7 @@ def add_data(newsArr):
     values(%s, %s, %s, %s, %s, %s, %s)"""
 
     cursor.executemany(query,newsArr)
+
     db.commit()
 
 def add_donor(donorArr):
@@ -26,3 +27,4 @@ def add_donor(donorArr):
 
     cursor.execute(query,donorArr)
     db.commit()
+

@@ -1,11 +1,11 @@
 data = [
     {
-        'category': 'ПЧВ и БП',
+        'category': 'ПЧВ',
         'place': 'ru',
         'id': '0',
         'name': 'Веспер',
         'url': "https://www.vesper.ru/presscenter/news-events/",
-        'url-prefix': 'https://www.vesper.ru',
+        'url_prefix': 'https://www.vesper.ru',
         'root_': {
             'selector': "div.b-news-list__list",
             'position': 0
@@ -28,12 +28,12 @@ data = [
         }
     },
     {
-        'category': 'ПЧВ и БП',
+        'category': 'ПЧВ',
         'place': 'ru',
         'id': '1',
         'name': 'Промситех продукты',
         'url': "https://www.prst.ru/news/products/",
-        'url-prefix': 'https://www.prst.ru',
+        'url_prefix': 'https://www.prst.ru',
         'root_': {
             'selector': "div.news-list",
             'position': 0
@@ -56,12 +56,12 @@ data = [
         }
     },
     {
-        'category': 'ПЧВ и БП',
+        'category': 'ПЧВ',
         'place': 'ru',
         'id': '2',
         'name': 'Промситех кампания',
         'url': "https://www.prst.ru/news/company/",
-        'url-prefix': 'https://www.prst.ru',
+        'url_prefix': 'https://www.prst.ru',
         'root_': {
             'selector': "div.news-list",
             'position': 0
@@ -84,12 +84,12 @@ data = [
         }
     },
     {
-        'category': 'ПЧВ и БП',
+        'category': 'ПЧВ',
         'place': 'com',
         'id': '3',
         'name': 'Вектор ВС',
         'url': "https://vector-vs.com/blog",
-        'url-prefix': 'https://vector-vs.com',
+        'url_prefix': 'https://vector-vs.com',
         'root_': {
             'selector': "div.blog__list",
             'position': 0
@@ -112,12 +112,13 @@ data = [
         }
     },
     {
-        'category': 'ПЧВ и БП',
+        'category': 'ПЧВ',
         'place': 'com',
         'id': '4',
-        'name': 'Триол',
+        'name': 'abb.com',
         'url': "https://new.abb.com/ru/pressa/archive",
-        'url-prefix': '',
+        'url_prefix': '',
+        'date_format': '%Y-%m-%d',
         'root_': {
             'selector': "ul.oneabb-newsbank-news-NewsList",
             'position': 0

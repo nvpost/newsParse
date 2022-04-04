@@ -12,8 +12,10 @@ db = pymysql.connect(host="localhost",
 
 cursor = db.cursor()
 
-def add_data(newsArr, site_id):
+addCounter = 0
 
+def add_data(newsArr, site_id):
+    global addCounter
     query = """INSERT INTO news(site_id, group_id, lang, news_date, title, link, status)
     values(%s, %s, %s, %s, %s, %s, %s)"""
 
@@ -40,9 +42,12 @@ def add_data(newsArr, site_id):
 
 
     print(dataToAdd)
-    cursor.executemany(query,dataToAdd)
 
-    db.commit()
+    addCounter = addCounter + len(dataToAdd)
+
+    # cursor.executemany(query,dataToAdd)
+    #
+    # db.commit()
 
 def add_donor(donorArr):
     query = """INSERT INTO news_donor(site_id, name, link, category, lang)

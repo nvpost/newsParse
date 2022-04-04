@@ -10,18 +10,36 @@ from data import pr_ru
 from data import op_ru
 from data import sp_ru
 from data import p4v_ru
-from data import sensor_ru
 from data import sensors_ru2
 from data import mt_ru
+
+
 
 # kip_ru, pr_ru, op_ru, sp_ru
 userAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.174 YaBrowser/22.1.5.769 Yowser/2.5 Safari/537.36"
 
+
+an_chunks = [
+    op_ru.data,
+    pr_ru.data,
+    kip_ru.data,
+    sp_ru.data,
+    p4v_ru.data,
+    sensors_ru2.data,
+    mt_ru.data
+]
+allData = []
+for i in an_chunks:
+    allData = allData + i
+
+
 common_dateFormat = '%d.%m.%Y'
-for el in sp_ru.data:
+
+addCounter = 0
+
+for el in allData:
     print('--------------------------------------')
     print(el['url'])
-
     group_id = el['category']
     try:
         group_id = ", ".join(el['dop_cat'])
@@ -64,9 +82,6 @@ for el in sp_ru.data:
         date = ""
         title = ""
         link = el['url']
-
-
-
 
         try:
             title = func.changeSymbol(i.select(el['title_']['selector'])[el['title_']['position']].text)
@@ -138,6 +153,8 @@ for el in sp_ru.data:
     send_data_sql.add_data(newsArr, site_id)
     # send_data_sql.add_donor(donor_arr)
     # print(newsArr)
+
+    print("Всего добавлено ", send_data_sql.addCounter)
 
 
 

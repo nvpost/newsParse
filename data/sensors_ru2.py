@@ -770,34 +770,35 @@ data = [
             'position': 0
         }
     },
-        {
-        'category': 'Датчики',
-        'place': 'ru',
-        'id': '26',
-        'name': 'Кип-сервис',
-        'url': "https://kipservis.ru/news",
-        'url_prefix': 'https://kipservis.ru',
-        'root_': {
-            'selector': "div.cards",
-            'position': 0
-        },
-        'items_': {
-            'selector': "li.card",
-            'position': 0
-        },
-        'date_': {
-            'selector': "small",
-            'position': 0
-        },
-        'title_': {
-            'selector': "a",
-            'position': 0
-        },
-        'link_': {
-            'selector': "a",
-            'position': 0
-        }
-    },
+    #     {
+    #     #     Страница недоступна
+    #     'category': 'Датчики',
+    #     'place': 'ru',
+    #     'id': '26',
+    #     'name': 'Кип-сервис',
+    #     'url': "https://kipservis.ru/news",
+    #     'url_prefix': 'https://kipservis.ru',
+    #     'root_': {
+    #         'selector': "div.cards",
+    #         'position': 0
+    #     },
+    #     'items_': {
+    #         'selector': "li.card",
+    #         'position': 0
+    #     },
+    #     'date_': {
+    #         'selector': "small",
+    #         'position': 0
+    #     },
+    #     'title_': {
+    #         'selector': "a",
+    #         'position': 0
+    #     },
+    #     'link_': {
+    #         'selector': "a",
+    #         'position': 0
+    #     }
+    # },
         {
         #     Без даты
         'category': 'Датчики',

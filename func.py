@@ -64,10 +64,10 @@ def df(date_str, format):
     date_str = date_str.replace('г.', '')
     date_str = date_str.replace('..', '.')
 
-    print('---')
-    print('date_str',repr(date_str))
-    print('format', format)
-    print('---')
+    # print('---')
+    # print('date_str',repr(date_str))
+    # print('format', format)
+    # print('---')
 
     # nd = datetime.datetime.strptime(date_str, format)
     try:

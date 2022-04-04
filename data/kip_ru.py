@@ -64,7 +64,7 @@ data = [
 
     {
         'category': 'Кип',
-        'dop_cat': ['Кип','ОП', 'СП', 'ПЧВ'],
+        'dop_cat': ['Кип','ОП', 'СПУ', 'ПЧВ'],
         'place': 'ru',
         'id': 3,
         'name': 'Deltronics',

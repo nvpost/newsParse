@@ -22,7 +22,7 @@ userAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML
 
 common_dateFormat = '%d.%m.%Y'
 
-el = p4v_ru.data[5]
+el = sp_ru.data[3]
 group_id = el['category']
 # меняем id на имя
 site_id = el['name']
@@ -153,9 +153,10 @@ print("Всего новостей: ", len(newsArr))
 # print(site_id)
 
 donor_arr=(site_id, site_name, url, group_id, lang)
+
 print(donor_arr)
 
 
 
-# send_data_sql.add_data(newsArr)
+send_data_sql.add_data(newsArr, site_id)
 # send_data_sql.add_donor(donor_arr)

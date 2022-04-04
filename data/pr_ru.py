@@ -214,7 +214,7 @@ data = [
     },
     {
         'category': 'ПР',
-        'dop_cat': ['ПР', 'ОП', 'СП'],
+        'dop_cat': ['ПР', 'ОП', 'СПУ'],
         'place': 'com',
         'name': 'Segnetics',
         'url': "https://segnetics.com/ru/news",

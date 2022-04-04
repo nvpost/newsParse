@@ -11,6 +11,7 @@ def cleanDate(s):
     s = s.replace('\n', '')
     s = s.replace('\t', '')
     s = s.replace('|', '')
+    s = s.replace('—', '2022')
 
 
     # Ломает дату
@@ -23,10 +24,7 @@ def cleanDate(s):
 def df(date_str, format):
 
 
-    # print('---')
-    # print('date_str',repr(date_str))
-    # print('format', format)
-    # print('---')
+
 
     date_str = date_str.replace('/', '.')
 
@@ -66,9 +64,12 @@ def df(date_str, format):
     date_str = date_str.replace('г.', '')
     date_str = date_str.replace('..', '.')
 
+    print('---')
+    print('date_str',repr(date_str))
+    print('format', format)
+    print('---')
 
-
-    nd = datetime.datetime.strptime(date_str, format)
+    # nd = datetime.datetime.strptime(date_str, format)
     try:
         nd = datetime.datetime.strptime(date_str, format)
     except:

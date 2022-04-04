@@ -177,7 +177,7 @@ data = [
         'id': '6',
         'name': 'Tibbo Systems',
         'url': "https://blog.aggregate.digital/ru/category/company-news/",
-        'date_format': '.%d.%m%Y',
+        'date_format': '.%m.%d%Y',
         'root_': {
             'selector': "main.site-main",
             'position': 0

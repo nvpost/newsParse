@@ -12,12 +12,13 @@ from data import sp_ru
 from data import p4v_ru
 from data import sensor_ru
 from data import sensors_ru2
+from data import mt_ru
 
 # kip_ru, pr_ru, op_ru, sp_ru
 userAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.174 YaBrowser/22.1.5.769 Yowser/2.5 Safari/537.36"
 
 common_dateFormat = '%d.%m.%Y'
-for el in sensors_ru2.data:
+for el in sp_ru.data:
     print('--------------------------------------')
     print(el['url'])
 
@@ -88,6 +89,10 @@ for el in sensors_ru2.data:
                 date = date.split(' ')[0]
             if el['name'] == "Теплоприбор Челябинск":
                 date = date.split(' ')[0]
+            if el['name'] == 'Провенто':
+                date = date + '.2022'
+            if el['name'] == 'TDM ELECTRIC':
+                date = date.replace('—', '2022')
 
             if (el['name'] == "Е_Е"):
                 month_list = ['January', 'February', 'March', 'April', 'May', 'June',
@@ -125,14 +130,14 @@ for el in sensors_ru2.data:
             print(type(date))
             print(link)
 
-    print("Всего новостей: ", len(newsArr))
+    # print("Всего новостей: ", len(newsArr))
 
     donor_arr = (site_id, site_name, url, group_id, lang)
-    print(donor_arr)
+    # print(donor_arr)
 
-    # send_data_sql.add_data(newsArr)
+    send_data_sql.add_data(newsArr, site_id)
     # send_data_sql.add_donor(donor_arr)
-    print(newsArr)
+    # print(newsArr)
 
 
 

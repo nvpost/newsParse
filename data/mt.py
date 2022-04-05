@@ -199,7 +199,7 @@ data = [
       },
       {
           'category': 'Meyertec',
-          'place': 'tr',
+          'place': 'else',
           'id': '7',
           'name': 'KLEMSAN',
           'url': "https://klemsan.com.tr/news-russia",
@@ -280,5 +280,66 @@ data = [
               'selector': "div.entry-title > a",
               'position': 0
           }
-      }
+      },
+#     ua
+    {
+        'category': 'Meyertec',
+        'dop_cat': ['Meyertec'],
+        'place': 'ua',
+        'id': '6',
+        'name': 'АСКО',
+        'url': "https://www.acko.ua/news/",
+        'url_prefix': '',
+        'date_format': '%d.%m.%Y',
+        'root_': {
+            'selector': "section.news-catalog",
+            'position': 0
+        },
+        'items_': {
+            'selector': "div.news-catalog_it",
+            'position': 0
+        },
+        'date_': {
+            'selector': "span",
+            'position': 0
+        },
+        'title_': {
+            'selector': "p",
+            'position': 0
+        },
+        'link_': {
+            'selector': "a",
+            'position': 0
+        }
+    },
+#     other
+    {
+        'category': 'Meyertec',
+        'dop_cat': ['Meyertec'],
+        'place': 'else',
+        'id': '0',
+        'name': 'Werma',
+        'url': "https://www.werma.com/en/news/news.php",
+        'url_prefix': 'https://www.werma.com',
+        'root_': {
+            'selector': "div.news",
+            'position': 0
+        },
+        'items_': {
+            'selector': "div.news > div.col-md-6",
+            'position': 0
+        },
+        'date_': {
+            'selector': "div.date",
+            'position': 0
+        },
+        'title_': {
+            'selector': "h3",
+            'position': 0
+        },
+        'link_': {
+            'selector': "a.more",
+            'position': 0
+        }
+    }
 ]

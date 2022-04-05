@@ -41,21 +41,24 @@ def add_data(newsArr, site_id):
 
 
 
-    print(dataToAdd)
-
     addCounter = addCounter + len(dataToAdd)
-
-    # cursor.executemany(query,dataToAdd)
-    #
-    # db.commit()
+    if(len(dataToAdd)>0):
+        print(dataToAdd)
+        cursor.executemany(query, dataToAdd)
+        db.commit()
 
 def add_donor(donorArr):
     query = """INSERT INTO news_donor(site_id, name, link, category, lang)
     values(%s, %s, %s, %s, %s)"""
 
-
-    # cursor.execute(query,donorArr)
-    # db.commit()
+    name = donorArr[1]
+    cursor.execute("SELECT * FROM news_donor WHERE name=%s", name)
+    now_have = cursor.fetchall()
+    print(now_have)
+    if(len(now_have)==0):
+        cursor.execute(query, donorArr)
+        db.commit()
+        print('добавили', name)
 
 
 

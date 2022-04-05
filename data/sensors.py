@@ -88,7 +88,7 @@ data = [
             'position': 0
         }
     },
-        {
+    {
         'category': 'Датчики',
         'place': 'ru',
         'id': '3',
@@ -116,7 +116,7 @@ data = [
             'position': 0
         }
     },
-        {
+    {
         #     Без даты
         'category': 'Датчики',
         'place': 'com',
@@ -173,7 +173,7 @@ data = [
     #         'position': 0
     #     }
     # },
-        {
+    {
         'category': 'Датчики',
         'place': 'com',
         'id': '6',
@@ -201,7 +201,7 @@ data = [
             'position': 0
         }
     },
-        {
+    {
         'category': 'Датчики',
         'place': 'com',
         'id': '7',
@@ -260,7 +260,7 @@ data = [
     #         'position': 0
     #     }
     # },
-        {
+    {
         'category': 'Датчики',
         'place': 'ru',
         'id': '9',
@@ -288,7 +288,7 @@ data = [
             'position': 0
         }
     },
-        {
+    {
         #     Ограниченое количество новостей
         'category': 'Датчики',
         'place': 'ru',
@@ -318,7 +318,7 @@ data = [
             'position': 0
         }
     },
-        {
+    {
         'category': 'Датчики',
         'place': 'ru',
         'id': '11',
@@ -346,7 +346,7 @@ data = [
             'position': 0
         }
     },
-        {
+    {
         'category': 'Датчики',
         'place': 'ru',
         'id': '12',
@@ -374,7 +374,7 @@ data = [
             'position': 0
         }
     },
-        {
+    {
         'category': 'Датчики',
         'place': 'ru',
         'id': '13',
@@ -402,7 +402,7 @@ data = [
             'position': 0
         }
     },
-        {
+    {
         'category': 'Датчики',
         'place': 'ru',
         'id': '14',
@@ -430,7 +430,7 @@ data = [
             'position': 0
         }
     },
-        {
+    {
         'category': 'Датчики',
         'place': 'ru',
         'id': '15',
@@ -441,7 +441,7 @@ data = [
         #     'selector': "div.news-block",
         #     'position': 0
         # },
-        'root_':False,
+        'root_': False,
         'items_': {
             'selector': "div.item",
             'position': 0
@@ -459,7 +459,7 @@ data = [
             'position': 0
         }
     },
-        {
+    {
         'category': 'Датчики',
         'place': 'ru',
         'id': '16',
@@ -487,7 +487,7 @@ data = [
             'position': 0
         }
     },
-        {
+    {
         'category': 'Датчики',
         'place': 'ru',
         'id': '17',
@@ -515,7 +515,7 @@ data = [
             'position': 0
         }
     },
-        {
+    {
         #     Без даты
         'category': 'Датчики',
         'place': 'ru',
@@ -544,7 +544,7 @@ data = [
             'position': 0
         }
     },
-        {
+    {
         'category': 'Датчики',
         'place': 'ru',
         'id': '19',
@@ -572,7 +572,7 @@ data = [
             'position': 0
         }
     },
-        {
+    {
         'category': 'Датчики',
         'place': 'com',
         'id': '20',
@@ -583,7 +583,7 @@ data = [
         #     'selector': "div.col-md-12",
         #     'position': 0
         # },
-        'root_':False,
+        'root_': False,
         'items_': {
             'selector': "div.news",
             'position': 0
@@ -601,7 +601,7 @@ data = [
             'position': 0
         }
     },
-        {
+    {
         'category': 'Датчики',
         'place': 'ru',
         'id': '21',
@@ -629,7 +629,7 @@ data = [
             'position': 0
         }
     },
-        {
+    {
         'category': 'Датчики',
         'place': 'ru',
         'id': '22',
@@ -657,7 +657,7 @@ data = [
             'position': 0
         }
     },
-        {
+    {
         'category': 'Датчики',
         'place': 'ru',
         'id': '23',
@@ -686,7 +686,7 @@ data = [
             'position': 0
         }
     },
-        {
+    {
         'category': 'Датчики',
         'place': 'ru',
         'id': '24',
@@ -742,7 +742,7 @@ data = [
     #         'position': 0
     #     }
     # },
-        {
+    {
         'category': 'Датчики',
         'place': 'ru',
         'id': '25',
@@ -800,7 +800,7 @@ data = [
     #         'position': 0
     #     }
     # },
-        {
+    {
         #     Без даты
         'category': 'Датчики',
         'place': 'ru',
@@ -829,7 +829,7 @@ data = [
             'position': 0
         }
     },
-        {
+    {
         'category': 'Датчики',
         'place': 'ru',
         'id': '28',
@@ -857,10 +857,10 @@ data = [
             'position': 0
         }
     },
-        {
+    {
         #     Без даты
         'category': 'Датчики',
-        'place': 'su',
+        'place': 'ru',
         'id': '29',
         'name': 'E_E su',
         'url': "https://epluse.su/news/news.htm",
@@ -886,7 +886,7 @@ data = [
             'position': 0
         }
     },
-        {
+    {
         #     Без даты
         'category': 'Датчики',
         'place': 'ru',
@@ -915,7 +915,7 @@ data = [
             'position': 0
         }
     },
-        {
+    {
         'category': 'Датчики',
         'place': 'ru',
         'id': '31',
@@ -943,7 +943,7 @@ data = [
             'position': 0
         }
     },
-        {
+    {
         'category': 'Датчики',
         'place': 'ru',
         'id': '32',
@@ -971,7 +971,7 @@ data = [
             'position': 0
         }
     },
-        {
+    {
         'category': 'Датчики',
         'place': 'ru',
         'id': '33',
@@ -999,7 +999,7 @@ data = [
             'position': 0
         }
     },
-        {
+    {
         'category': 'Датчики',
         'place': 'ru',
         'id': '34',
@@ -1010,7 +1010,7 @@ data = [
         #     'selector': "div.news_list",
         #     'position': 0
         # },
-            'root_': False,
+        'root_': False,
         'items_': {
             'selector': "div.news_list > div.item",
             'position': 0
@@ -1029,7 +1029,7 @@ data = [
             'position': 0
         }
     },
-        {
+    {
         'category': 'Датчики',
         'place': 'ru',
         'id': '35',
@@ -1057,14 +1057,14 @@ data = [
             'position': 0
         }
     },
-        {
+    {
         'category': 'Датчики',
         'place': 'ru',
         'id': '36',
         'name': 'Эталон Омск',
         'url': "http://www.omsketalon.ru/novosti",
         'url_prefix': 'http://www.omsketalon.ru',
-        'date_format':'%d.%m.%y',
+        'date_format': '%d.%m.%y',
         # 'root_': {
         #     'selector': "div.col-md_news",
         #     'position': 0
@@ -1087,14 +1087,14 @@ data = [
             'position': 0
         }
     },
-        {
+    {
         'category': 'Датчики',
         'place': 'ru',
         'id': '37',
         'name': 'ООО «Стэнли» (Корунд)',
         'url': "https://stenli.ru/novosti",
         'url_prefix': 'https://stenli.ru/',
-        'date_format':'%d.%m.%Y',
+        'date_format': '%d.%m.%Y',
         'root_': {
             'selector': "div.g-article-list",
             'position': 0
@@ -1116,7 +1116,7 @@ data = [
             'position': 0
         }
     },
-        {
+    {
         'category': 'Датчики',
         'place': 'ru',
         'id': '38',
@@ -1144,7 +1144,7 @@ data = [
             'position': 0
         }
     },
-        {
+    {
         #     без даты
         'category': 'Датчики',
         'place': 'com',
@@ -1173,7 +1173,7 @@ data = [
             'position': 0
         }
     },
-        {
+    {
         #     Без даты
         'category': 'Датчики',
         'place': 'ru',

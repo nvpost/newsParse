@@ -12,7 +12,14 @@ from data import sp_ru
 from data import p4v_ru
 from data import sensor_ru
 from data import sensors_ru2
+
 import func
+
+
+from data import sensors
+from data import pr
+from data import kip
+from data import mt
 
 
 
@@ -20,11 +27,12 @@ from sql import send_data_sql
 
 an_chunks = [
     op_ru.data,
-    pr_ru.data,
-    kip_ru.data,
+    pr.data,
+    kip.data,
     sp_ru.data,
     p4v_ru.data,
-    sensors_ru2.data
+    sensors.data,
+    mt.data
 ]
 allData = []
 for i in an_chunks:
@@ -35,7 +43,7 @@ userAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML
 
 common_dateFormat = '%d.%m.%Y'
 
-el = sensors_ru2.data[24]
+el = p4v_ru.data[0]
 group_id = el['category']
 # меняем id на имя
 site_id = el['name']
@@ -57,7 +65,6 @@ except:
     url_prefix = ""
 
 page = requests.get(el['url'], timeout=(5, 15), headers={'User-Agent': userAgent})
-
 
 try:
     page.encoding = el['encoding_']
@@ -171,5 +178,5 @@ print(donor_arr)
 
 
 
-send_data_sql.add_data(newsArr, site_id)
-# send_data_sql.add_donor(donor_arr)
+# send_data_sql.add_data(newsArr, site_id)
+send_data_sql.add_donor(donor_arr)

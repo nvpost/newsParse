@@ -11,33 +11,33 @@ from data import op_ru
 from data import sp_ru
 from data import p4v_ru
 from data import sensors_ru2
-from data import mt_ru
 
 
+from data import sensors
+from data import pr
+from data import kip
+from data import mt
 
 # kip_ru, pr_ru, op_ru, sp_ru
 userAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.174 YaBrowser/22.1.5.769 Yowser/2.5 Safari/537.36"
-
+addCounter = 0
 
 an_chunks = [
     op_ru.data,
-    pr_ru.data,
-    kip_ru.data,
+    pr.data,
+    kip.data,
     sp_ru.data,
     p4v_ru.data,
-    sensors_ru2.data,
-    mt_ru.data
+    sensors.data,
+    mt.data
 ]
 allData = []
 for i in an_chunks:
     allData = allData + i
 
-
 common_dateFormat = '%d.%m.%Y'
 
-addCounter = 0
-
-for el in allData:
+for el in mt.data:
     print('--------------------------------------')
     print(el['url'])
     group_id = el['category']
@@ -140,10 +140,10 @@ for el in allData:
             )
 
             # if type(date) is str:
-            print(title)
-            print(date)
-            print(type(date))
-            print(link)
+            # print(title)
+            # print(date)
+            # print(type(date))
+            # print(link)
 
     # print("Всего новостей: ", len(newsArr))
 
@@ -151,10 +151,10 @@ for el in allData:
     # print(donor_arr)
 
     send_data_sql.add_data(newsArr, site_id)
-    # send_data_sql.add_donor(donor_arr)
+    send_data_sql.add_donor(donor_arr)
     # print(newsArr)
 
-    print("Всего добавлено ", send_data_sql.addCounter)
+    print("Всего добавлено новостей", send_data_sql.addCounter)
 
 
 

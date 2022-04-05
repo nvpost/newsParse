@@ -173,7 +173,7 @@ data = [
     },
     {
         'category': 'СПУ',
-        'place': 'digital',
+        'place': 'ru',
         'id': '6',
         'name': 'Tibbo Systems',
         'url': "https://blog.aggregate.digital/ru/category/company-news/",

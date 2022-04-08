@@ -7,16 +7,19 @@ from sql import send_data_sql
 
 from data import kip_ru
 from data import pr_ru
-from data import op_ru
+
 from data import sp_ru
-from data import p4v_ru
+
 from data import sensors_ru2
 
 
-from data import sensors
-from data import pr
-from data import kip
 from data import mt
+from data import sensors
+from data import op_ru
+from data import kip
+from data import p4v_ru
+from data import pr
+from data import agregator
 
 # kip_ru, pr_ru, op_ru, sp_ru
 userAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.174 YaBrowser/22.1.5.769 Yowser/2.5 Safari/537.36"
@@ -37,7 +40,7 @@ for i in an_chunks:
 
 common_dateFormat = '%d.%m.%Y'
 
-for el in mt.data:
+for el in agregator.data:
     print('--------------------------------------')
     print(el['url'])
     group_id = el['category']
@@ -139,7 +142,6 @@ for el in mt.data:
                 (site_id, group_id, lang, date, title, link, 0)
             )
 
-            # if type(date) is str:
             # print(title)
             # print(date)
             # print(type(date))

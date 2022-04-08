@@ -27,6 +27,7 @@ def df(date_str, format):
 
 
     date_str = date_str.replace('/', '.')
+    date_str = date_str.lower()
 
 # есть даты в формате 24февраля2022
 
@@ -38,6 +39,9 @@ def df(date_str, format):
 
     month_list2 = ['январь', 'февраль', 'март', 'апрель', 'май', 'июнь',
                    'июль', 'август', 'сентябрь', 'октябрь', 'ноябрь', 'декабрь']
+
+    month_list_en = ['january', 'february', 'march', 'april', 'may', 'june',
+                     'july', 'august', 'september', 'october', 'november', 'december']
 
 
 
@@ -58,7 +62,13 @@ def df(date_str, format):
         old = short_month_list[m]
         date_str = date_str.replace(old, '.' + str(m + 1) + '.')
 
+    for m in range(len(month_list_en)):
+        # print(m)
+        date_str = date_str.replace(', ', '')
+        date_str = date_str.lower()
 
+        old = month_list_en[m]
+        date_str = date_str.replace(old, '.' + str(m + 1) + '.')
 
 
     date_str = date_str.replace('г.', '')

@@ -56,9 +56,9 @@ def add_donor(donorArr):
     now_have = cursor.fetchall()
     print(now_have)
     if(len(now_have)==0):
+        print('добавили', name)
         cursor.execute(query, donorArr)
         db.commit()
-        print('добавили', name)
 
 
 

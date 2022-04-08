@@ -12,6 +12,7 @@ from data import sp_ru
 from data import p4v_ru
 from data import sensor_ru
 from data import sensors_ru2
+from data import agregator
 
 import func
 
@@ -43,7 +44,7 @@ userAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML
 
 common_dateFormat = '%d.%m.%Y'
 
-el = p4v_ru.data[0]
+el = agregator.data[18]
 group_id = el['category']
 # меняем id на имя
 site_id = el['name']
@@ -103,6 +104,15 @@ for i in items:
             date = date.split(' ')[0]
         if el['name'] == "Теплоприбор Челябинск":
             date = date.split(' ')[0]
+
+        if(el['name']=="Automation World Products") or (el['name']=="999automation"):
+            date = date.replace('th', '.')
+            date = date.replace('nd', '.')
+            date = date.replace('st', '.')
+        if(el['name']=="КИПиС") or (el['name']=="Automate"):
+            date = date.split('|')[0]
+        if(el['name']=="Manufacturing Tomorrow"):
+            date = date.split(':')[0]
 
 
         if (el['name'] == "Е_Е"):

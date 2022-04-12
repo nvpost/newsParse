@@ -2,6 +2,369 @@ data = [
     {
         'category': 'agregator',
         'dop_cat': ['agregator'],
+        'place': 'ru',
+        'id': '0',
+        'name': 'Oborudunion',
+        'url': "https://www.oborudunion.ru/novosti-mashinostroeniya",
+        'date_format': '%d.%m.%Y',
+        'root_': {
+            'selector': "div.module-publication",
+            'position': 0
+        },
+        'items_': {
+            'selector': "div.bordered",
+            'position': 0
+        },
+        'date_': {
+            'selector': "div.date",
+            'position': 0
+        },
+        'title_': {
+            'selector': "h2",
+            'position': 0
+        },
+        'link_': {
+            'selector': "h2 > a",
+            'position': 0
+        },
+        'image_url': {
+            'selector': "img",
+            'position': 0
+        }
+    }, {
+        'category': 'agregator',
+        'dop_cat': ['agregator'],
+        'place': 'ru',
+        'id': '1',
+        'name': 'Elec Новинки оборудования',
+        'url': "https://www.elec.ru/news/equipment/",
+        'url_prefix': 'https://www.elec.ru/',
+        'date_format': '%d.%m.%Y',
+        'root_': {
+            'selector': "div#infinitescroll",
+            'position': 0
+        },
+        'items_': {
+            'selector': "div.stack-for-small",
+            'position': 0
+        },
+        'date_': {
+            'selector': "div.obj-10__date",
+            'position': 0
+        },
+        'title_': {
+            'selector': "div.obj-10__title",
+            'position': 0
+        },
+        'link_': {
+            'selector': "a.obj-10__thumb",
+            'position': 0
+        },
+        'image_url': {
+            'selector': "a.obj-10__thumb > img",
+            'position': 0
+        }
+    }, {
+        'category': 'agregator',
+        'dop_cat': ['agregator'],
+        'place': 'ru',
+        'id': '2',
+        'name': 'Elec Наука и образование',
+        'url': "https://www.elec.ru/news/since/",
+        'url_prefix': 'https://www.elec.ru/',
+        'date_format': '%d.%m.%Y',
+        'root_': {
+            'selector': "div#infinitescroll",
+            'position': 0
+        },
+        'items_': {
+            'selector': "div.stack-for-small",
+            'position': 0
+        },
+        'date_': {
+            'selector': "div.obj-10__date",
+            'position': 0
+        },
+        'title_': {
+            'selector': "div.obj-10__title",
+            'position': 0
+        },
+        'link_': {
+            'selector': "a.obj-10__thumb",
+            'position': 0
+        },
+        'image_url': {
+            'selector': "a.obj-10__thumb > img",
+            'position': 0
+        }
+    }, {
+        'category': 'agregator',
+        'dop_cat': ['agregator'],
+        'place': 'ru',
+        'id': '3',
+        'name': 'Elec Мировые новости',
+        'url': "https://www.elec.ru/news/world/",
+        'url_prefix': 'https://www.elec.ru/',
+        'date_format': '%d.%m.%Y',
+        'root_': {
+            'selector': "div#infinitescroll",
+            'position': 0
+        },
+        'items_': {
+            'selector': "div.stack-for-small",
+            'position': 0
+        },
+        'date_': {
+            'selector': "div.obj-10__date",
+            'position': 0
+        },
+        'title_': {
+            'selector': "div.obj-10__title",
+            'position': 0
+        },
+        'link_': {
+            'selector': "a.obj-10__thumb",
+            'position': 0
+        },
+        'image_url': {
+            'selector': "a.obj-10__thumb > img",
+            'position': 0
+        }
+    }, {
+        'category': 'agregator',
+        'dop_cat': ['agregator'],
+        'place': 'ru',
+        'id': '4',
+        'name': 'Elec Альтернативная энергетика',
+        'url': "https://www.elec.ru/news/alternativnaya-energetika/",
+        'url_prefix': 'https://www.elec.ru/',
+        'date_format': '%d.%m.%Y',
+        'root_': {
+            'selector': "div#infinitescroll",
+            'position': 0
+        },
+        'items_': {
+            'selector': "div.stack-for-small",
+            'position': 0
+        },
+        'date_': {
+            'selector': "div.obj-10__date",
+            'position': 0
+        },
+        'title_': {
+            'selector': "div.obj-10__title",
+            'position': 0
+        },
+        'link_': {
+            'selector': "a.obj-10__thumb",
+            'position': 0
+        },
+        'image_url': {
+            'selector': "a.obj-10__thumb > img",
+            'position': 0
+        }
+    }, {
+        'category': 'agregator',
+        'dop_cat': ['agregator'],
+        'place': 'ru',
+        'id': '5',
+        'name': 'Elec Окоём',
+        'url': "https://www.elec.ru/news/okoyom/",
+        'url_prefix': 'https://www.elec.ru/',
+        'date_format': '%d.%m.%Y',
+        'root_': {
+            'selector': "div#infinitescroll",
+            'position': 0
+        },
+        'items_': {
+            'selector': "div.stack-for-small",
+            'position': 0
+        },
+        'date_': {
+            'selector': "div.obj-10__date",
+            'position': 0
+        },
+        'title_': {
+            'selector': "div.obj-10__title",
+            'position': 0
+        },
+        'link_': {
+            'selector': "a.obj-10__thumb",
+            'position': 0
+        },
+        'image_url': {
+            'selector': "a.obj-10__thumb > img",
+            'position': 0
+        }
+    }, {
+        'category': 'agregator',
+        'dop_cat': ['agregator'],
+        'place': 'ru',
+        'id': '6',
+        'name': 'Elec Новости компаний',
+        'url': "https://www.elec.ru/news/companies/",
+        'url_prefix': 'https://www.elec.ru/',
+        'date_format': '%d.%m.%Y',
+        'root_': {
+            'selector': "div#infinitescroll",
+            'position': 0
+        },
+        'items_': {
+            'selector': "div.stack-for-small",
+            'position': 0
+        },
+        'date_': {
+            'selector': "div.obj-10__date",
+            'position': 0
+        },
+        'title_': {
+            'selector': "div.obj-10__title",
+            'position': 0
+        },
+        'link_': {
+            'selector': "a.obj-10__thumb",
+            'position': 0
+        },
+        'image_url': {
+            'selector': "a.obj-10__thumb > img",
+            'position': 0
+        }
+    }, {
+        'category': 'agregator',
+        'dop_cat': ['agregator'],
+        'place': 'ru',
+        'id': '7',
+        'name': 'Elec Деловые новости',
+        'url': "https://www.elec.ru/news/business/",
+        'url_prefix': 'https://www.elec.ru/',
+        'date_format': '%d.%m.%Y',
+        'root_': {
+            'selector': "div#infinitescroll",
+            'position': 0
+        },
+        'items_': {
+            'selector': "div.stack-for-small",
+            'position': 0
+        },
+        'date_': {
+            'selector': "div.obj-10__date",
+            'position': 0
+        },
+        'title_': {
+            'selector': "div.obj-10__title",
+            'position': 0
+        },
+        'link_': {
+            'selector': "a.obj-10__thumb",
+            'position': 0
+        },
+        'image_url': {
+            'selector': "a.obj-10__thumb > img",
+            'position': 0
+        }
+    }, {
+        'category': 'agregator',
+        'dop_cat': ['agregator'],
+        'place': 'ru',
+        'id': '8',
+        'name': 'Elec Новости энергетики',
+        'url': "https://www.elec.ru/news/energy/",
+        'url_prefix': 'https://www.elec.ru/',
+        'date_format': '%d.%m.%Y',
+        'root_': {
+            'selector': "div#infinitescroll",
+            'position': 0
+        },
+        'items_': {
+            'selector': "div.stack-for-small",
+            'position': 0
+        },
+        'date_': {
+            'selector': "div.obj-10__date",
+            'position': 0
+        },
+        'title_': {
+            'selector': "div.obj-10__title",
+            'position': 0
+        },
+        'link_': {
+            'selector': "a.obj-10__thumb",
+            'position': 0
+        },
+        'image_url': {
+            'selector': "a.obj-10__thumb > img",
+            'position': 0
+        }
+    }, {
+        'category': 'agregator',
+        'dop_cat': ['agregator'],
+        'place': 'ru',
+        'id': '9',
+        'name': 'Elec HOT Price',
+        'url': "https://www.elec.ru/news/hot-price/",
+        'url_prefix': 'https://www.elec.ru/',
+        'date_format': '%d.%m.%Y',
+        'root_': {
+            'selector': "div#infinitescroll",
+            'position': 0
+        },
+        'items_': {
+            'selector': "div.stack-for-small",
+            'position': 0
+        },
+        'date_': {
+            'selector': "div.obj-10__date",
+            'position': 0
+        },
+        'title_': {
+            'selector': "div.obj-10__title",
+            'position': 0
+        },
+        'link_': {
+            'selector': "a.obj-10__thumb",
+            'position': 0
+        },
+        'image_url': {
+            'selector': "a.obj-10__thumb > img",
+            'position': 0
+        }
+    }, {
+        'category': 'agregator',
+        'dop_cat': ['agregator'],
+        'place': 'ru',
+        'id': '10',
+        'name': 'Elec Отраслевые мероприятия',
+        'url': "https://www.elec.ru/news/events/",
+        'url_prefix': 'https://www.elec.ru/',
+        'date_format': '%d.%m.%Y',
+        'root_': {
+            'selector': "div#infinitescroll",
+            'position': 0
+        },
+        'items_': {
+            'selector': "div.stack-for-small",
+            'position': 0
+        },
+        'date_': {
+            'selector': "div.obj-10__date",
+            'position': 0
+        },
+        'title_': {
+            'selector': "div.obj-10__title",
+            'position': 0
+        },
+        'link_': {
+            'selector': "a.obj-10__thumb",
+            'position': 0
+        },
+        'image_url': {
+            'selector': "a.obj-10__thumb > img",
+            'position': 0
+        }
+    },
+    {
+        'category': 'agregator',
+        'dop_cat': ['agregator'],
         'place': 'else',
         'id': '0',
         'name': 'Advisory Group',
@@ -285,7 +648,7 @@ data = [
         'dop_cat': ['agregator'],
         'place': 'ru',
         'id': '9',
-        'name': 'Жернал ИСУП',
+        'name': 'Журнал ИСУП',
         'url': "https://isup.ru/news/",
         'url_prefix': 'https://isup.ru/',
         'date_format': '%d.%m.%Y',

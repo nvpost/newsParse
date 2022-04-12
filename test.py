@@ -44,7 +44,7 @@ userAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML
 
 common_dateFormat = '%d.%m.%Y'
 
-el = agregator.data[18]
+el = agregator.data[1]
 group_id = el['category']
 # меняем id на имя
 site_id = el['name']
@@ -114,13 +114,29 @@ for i in items:
         if(el['name']=="Manufacturing Tomorrow"):
             date = date.split(':')[0]
 
-
         if (el['name'] == "Е_Е"):
             month_list = ['January', 'February', 'March', 'April', 'May', 'June',
                                 'July', 'August', 'September', 'October', 'November', 'December']
             for m in range(len(month_list)):
                 old = month_list[m]
                 date = date.replace(old, str(m + 1) + '.')
+
+        if 'Elec ' in el['name']:
+            today = 'Сегодня'
+            est_day = 'Вчера'
+            if today in date:
+                date = str(datetime.datetime.today())
+                date = date.split(' ')[0]
+                date = date.split('-')
+                date = date[2] + '.' + date[1] + '.'  + date[0]
+            elif est_day in date:
+                date = str(datetime.datetime.today() - datetime.timedelta(days=1))
+                date = date.split(' ')[0]
+                date = date.split('-')
+                date = date[2] + '.' + date[1] + '.'  + date[0]
+            else:
+                date = date.split('в')[0]
+
 
         # print(date)
         # print(format)
@@ -156,6 +172,7 @@ for i in items:
     #     if d != []:
     #         date = d[0].text
     #         date = func.cleanDate(date)
+
 
 
     if (len(date)>2):

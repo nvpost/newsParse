@@ -21,6 +21,30 @@ def cleanDate(s):
     return s
 
 
+def date_exceptions(field, date):
+    if (field == "Atonics"):
+        date = date.split(' ')[0]
+    if field == "ООО «Стэнли» (Корунд)":
+        date = date.split(' ')[0]
+    if field == "Теплоприбор Челябинск":
+        date = date.split(' ')[0]
+    if field == 'Провенто':
+        date = date + '.2022'
+    if field == 'TDM ELECTRIC':
+        date = date.replace('—', '2022')
+
+    if (field == "Е_Е"):
+        month_list = ['January', 'February', 'March', 'April', 'May', 'June',
+                      'July', 'August', 'September', 'October', 'November', 'December']
+        for m in range(len(month_list)):
+            old = month_list[m]
+            date = date.replace(old, str(m + 1) + '.')
+
+    return date
+
+
+
+
 def df(date_str, format):
 
 

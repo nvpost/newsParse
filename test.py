@@ -5,19 +5,18 @@ import datetime
 
 
 # from data import sp_ru
-from data import op_ru
-from data import pr_ru
-from data import kip_ru
+# from data import op_ru
+
+
 from data import sp_ru
 from data import p4v_ru
-from data import sensor_ru
-from data import sensors_ru2
+
 from data import agregator
 
 import func
 
 
-from data import sensors
+# from data import sensors
 from data import pr
 from data import kip
 from data import mt
@@ -26,18 +25,18 @@ from data import mt
 
 from sql import send_data_sql
 
-an_chunks = [
-    op_ru.data,
-    pr.data,
-    kip.data,
-    sp_ru.data,
-    p4v_ru.data,
-    sensors.data,
-    mt.data
-]
-allData = []
-for i in an_chunks:
-    allData = allData + i
+# an_chunks = [
+#     op_ru.data,
+#     pr.data,
+#     kip.data,
+#     sp_ru.data,
+#     p4v_ru.data,
+#     sensors.data,
+#     mt.data
+# ]
+# allData = []
+# for i in an_chunks:
+#     allData = allData + i
 
 
 userAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.174 YaBrowser/22.1.5.769 Yowser/2.5 Safari/537.36"
@@ -64,6 +63,11 @@ try:
     url_prefix = el['url_prefix']
 except:
     url_prefix = ""
+
+try:
+    image_prefix = el['image_url']['image_prefix']
+except:
+    image_prefix = ""
 
 page = requests.get(el['url'], timeout=(5, 15), headers={'User-Agent': userAgent})
 
@@ -173,6 +177,23 @@ for i in items:
     #         date = d[0].text
     #         date = func.cleanDate(date)
 
+    try:
+        if 'Phoenix contact' in el['name'] or 'APLISENS' in el['name'] or 'Теплоприбор Челябинск' in el['name'] or 'Schneider Electric' in el['name'] or 'Automate' in el['name'] or 'Werma' in el['name'] or 'teremonline.ru' in el['name']:
+            image_url = (i.select(el['image_url']['selector'])[el['image_url']['position']].get('style')).strip()
+            image_url = image_url.replace(el['image_url']['replace_before'], '')
+            image_url = image_url.replace(el['image_url']['replace_after'], '')
+        elif 'Вектор ВС' in el['name']:
+            image_url = (i.select(el['image_url']['selector'])[el['image_url']['position']].get('data-bg-src'))
+        elif 'Полтраф СНГ' in el['name'] or 'Кип-сервис' in el['name'] or 'Werma' in el['name']:
+            image_url = (i.select(el['image_url']['selector'])[el['image_url']['position']].get('data_1-src'))
+        elif 'Werma' in el['name'] or 'РИЗУР' in el['name'] or 'Aereco' in el['name']:
+            image_url = (i.select(el['image_url']['selector'])[el['image_url']['position']].get('data-src'))
+        else:
+            image_url = (i.select(el['image_url']['selector'])[el['image_url']['position']].get('src'))
+        image_url = image_prefix + image_url
+    except:
+        image_url = 'нет изображения'
+
 
 
     if (len(date)>2):
@@ -193,7 +214,7 @@ for i in items:
         print(title)
         print(link)
         print(date)
-        print(type(date))
+        print(image_url)
         print("-------------------------------------------------------------------------")
 print("-------------------------------------------------------------------------")
 print("Всего новостей: ", len(newsArr))
@@ -206,4 +227,4 @@ print(donor_arr)
 
 
 # send_data_sql.add_data(newsArr, site_id)
-send_data_sql.add_donor(donor_arr)
+# send_data_sql.add_donor(donor_arr)

@@ -5,14 +5,9 @@ import func
 
 from sql import send_data_sql
 
-from data import kip_ru
-from data import pr_ru
+
 
 from data import sp_ru
-
-from data import sensors_ru2
-
-
 from data import mt
 from data import sensors
 from data import op_ru
@@ -21,7 +16,7 @@ from data import p4v_ru
 from data import pr
 from data import agregator
 
-# kip_ru, pr_ru, op_ru, sp_ru
+
 userAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.174 YaBrowser/22.1.5.769 Yowser/2.5 Safari/537.36"
 addCounter = 0
 
@@ -32,7 +27,8 @@ an_chunks = [
     sp_ru.data,
     p4v_ru.data,
     sensors.data,
-    mt.data
+    mt.data,
+    agregator.data
 ]
 allData = []
 for i in an_chunks:
@@ -62,8 +58,11 @@ for el in agregator.data:
     except:
         url_prefix = ""
 
-    lang = el['place']
-    page = requests.get(el['url'], timeout=(5, 15), headers={'User-Agent': userAgent})
+    try:
+        page = requests.get(el['url'], timeout=(5, 15), headers={'User-Agent': userAgent})
+    except:
+        print('Не получили', site_id)
+        continue
 
     try:
         page.encoding = el['encoding_']
@@ -96,6 +95,8 @@ for el in agregator.data:
                 if (el['name'] == "Atonics"):
                     link = link.replace('javascript:view(', '')
                     link = link.replace(');', '')
+
+
         except:
             pass
 
@@ -129,23 +130,22 @@ for el in agregator.data:
             print(date)
         # Исключения
 
+
         if (len(date) > 2):
-            # print('--main date--')
-            # print(date)
-            # print('--main date--')
             date = func.df(date, _format)
 
-        link = url_prefix + link
+        full_link = url_prefix + link
+
+        if link.find('http')==0:
+            full_link = link
+
+
 
         if title != "":
             newsArr.append(
-                (site_id, group_id, lang, date, title, link, 0)
+                (site_id, group_id, lang, date, title, full_link, 0)
             )
 
-            # print(title)
-            # print(date)
-            # print(type(date))
-            # print(link)
 
     # print("Всего новостей: ", len(newsArr))
 
@@ -154,8 +154,8 @@ for el in agregator.data:
 
     send_data_sql.add_data(newsArr, site_id)
     send_data_sql.add_donor(donor_arr)
-    # print(newsArr)
-
+    # # print(newsArr)
+    #
     print("Всего добавлено новостей", send_data_sql.addCounter)
 
 

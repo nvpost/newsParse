@@ -518,7 +518,7 @@ data = [
         'id': '5',
         'name': 'Manufacturing Tomorrow',
         'url': "https://www.manufacturingtomorrow.com/tag/industrial-automation",
-        'url_prefix': 'https://www.manufacturingtomorrow.com/',
+        'url_prefix': '',
         'date_format': '%m.%d.%y%H',
         'root_': {
             'selector': "div.page-content",
@@ -538,7 +538,8 @@ data = [
         },
         'link_': {
             'selector': "div.alignleft > a",
-            'position': 0
+            'position': 0,
+            'inner_link': True
         },
         'image_url': {
             'selector': "img",
@@ -881,7 +882,7 @@ data = [
         'id': '16',
         'name': 'Современная электроника',
         'url': "https://www.soel.ru/novosti/?all",
-        'url_prefix': 'https://www.soel.ru/',
+        'url_prefix': 'https://www.soel.ru',
         'date_format': '%d.%m.%Y',
         'root_': {
             'selector': "div.news",

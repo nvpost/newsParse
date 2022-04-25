@@ -16,8 +16,8 @@ addCounter = 0
 
 def add_data(newsArr, site_id):
     global addCounter
-    query = """INSERT INTO news(site_id, group_id, lang, news_date, title, link, status)
-    values(%s, %s, %s, %s, %s, %s, %s)"""
+    query = """INSERT INTO news(site_id, group_id, lang, news_date, title, link, status, image_url)
+    values(%s, %s, %s, %s, %s, %s, %s, %s)"""
 
 
 
@@ -26,6 +26,7 @@ def add_data(newsArr, site_id):
     now_have = cursor.fetchall()
 
     dataToAdd = []
+    print(newsArr)
     for i in newsArr:
         # print(i)
         addFlag = True
@@ -43,7 +44,7 @@ def add_data(newsArr, site_id):
 
     addCounter = addCounter + len(dataToAdd)
     if(len(dataToAdd)>0):
-        print(dataToAdd)
+        # print(dataToAdd)
         cursor.executemany(query, dataToAdd)
         db.commit()
 
@@ -54,11 +55,14 @@ def add_donor(donorArr):
     name = donorArr[1]
     cursor.execute("SELECT * FROM news_donor WHERE name=%s", name)
     now_have = cursor.fetchall()
-    print(now_have)
+    # print(now_have)
     if(len(now_have)==0):
         print('добавили', name)
         cursor.execute(query, donorArr)
         db.commit()
 
 
-
+def updateImg(image_url, title, site_id):
+    cursor.execute("UPDATE news SET image_url=%s WHERE title=%s AND site_id=%s", (image_url, title, site_id))
+    db.commit()
+    print('Для', site_id, 'добавили', image_url)

@@ -529,23 +529,23 @@ data = [
     'url_prefix': '',
     'date_format': '%d.%m.%Y',
     'root_': {
-        'selector': "ul.cs-publications-list",
+        'selector': "ul.b-publication-group__list",
         'position': 0
     },
     'items_': {
-        'selector': "li.cs-publications-list__item",
+        'selector': "li.b-publication-group__item",
         'position': 0
     },
     'date_': {
-        'selector': "time.cs-publications-list__date",
+        'selector': "time",
         'position': 0
     },
     'title_': {
-        'selector': "a.cs-publications-list__title",
+        'selector': "a.b-publication-group__title-link",
         'position': 0
     },
     'link_': {
-        'selector': "a.cs-publications-list__title",
+        'selector': "a.b-publication-group__title-link",
         'position': 0
     }
 },

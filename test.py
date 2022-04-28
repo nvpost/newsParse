@@ -17,9 +17,9 @@ import func
 
 
 # from data import sensors
-from data import pr
-from data import kip
-from data import mt
+from data_imgs import pr
+from data_imgs import kip
+from data_imgs import mt
 
 
 
@@ -43,7 +43,7 @@ userAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML
 
 common_dateFormat = '%d.%m.%Y'
 
-el = agregator.data[1]
+el = pr.data[5]
 group_id = el['category']
 # меняем id на имя
 site_id = el['name']

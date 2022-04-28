@@ -48,6 +48,8 @@ def add_data(newsArr, site_id):
         cursor.executemany(query, dataToAdd)
         db.commit()
 
+
+# Добавить лого для донора
 def add_donor(donorArr):
     query = """INSERT INTO news_donor(site_id, name, link, category, lang)
     values(%s, %s, %s, %s, %s)"""
@@ -63,6 +65,9 @@ def add_donor(donorArr):
 
 
 def updateImg(image_url, title, site_id):
+    # cursor.execute("SELECT * FROM news WHERE image_url=%s WHERE title=%s AND site_id=%s AND image_url=%s", (image_url, title, site_id, image_url))
+    # now_have = cursor.fetchall()
+
     cursor.execute("UPDATE news SET image_url=%s WHERE title=%s AND site_id=%s", (image_url, title, site_id))
     db.commit()
     print('Для', site_id, 'добавили', image_url)

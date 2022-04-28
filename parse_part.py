@@ -46,6 +46,7 @@ common_dateFormat = '%d.%m.%Y'
 
 def doParse(cat):
     for el in cat:
+        # if el['name']=='ASUTP':
         parse_logic.main_logic(el)
 
 

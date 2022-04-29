@@ -102,7 +102,7 @@ def main_logic(el):
             newsArr.append(
                 (site_id, group_id, lang, date, title, full_link, 0, image_url)
             )
-            send_data_sql.updateImg(image_url, title, site_id)
+            # send_data_sql.updateImg(image_url, title, site_id)
 
 
 
@@ -111,7 +111,7 @@ def main_logic(el):
     donor_arr = (site_id, site_name, url, group_id, lang)
     # print(donor_arr)
 
-    # send_data_sql.add_data(newsArr, site_id)
+    send_data_sql.add_data(newsArr, site_id)
     # send_data_sql.add_donor(donor_arr)
     # # print(newsArr)
     #

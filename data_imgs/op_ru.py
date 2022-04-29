@@ -6,6 +6,7 @@ data = [
         'name': 'cityron',
         'id': 1,
         'url': "https://cityron.ru/novosti",
+        'default_image': "https://cityron.ru/assets/web/_cache/thumbs/assets/mgr/images/logo_270x48_623.png",
         "url_prefix": "https://cityron.ru/",
         'root_': {
             'selector': "#news",
@@ -39,6 +40,7 @@ data = [
         'name': 'electrotest',
         'id': 2,
         'url': "https://electrotest.ru/about/news/",
+        'default_image': "https://electrotest.ru/assets/images/bl.svg",
         'url_prefix': 'https://electrotest.ru/',
         'root_': {
             'selector': ".tabs__content.active",
@@ -163,6 +165,7 @@ data = [
         'name': 'msc.alfaopt.com',
         'id': 8,
         'url': "https://msc.alfaopt.com/news/",
+        'default_image': "https://msc.alfaopt.com/upload/CNext/2fe/2fe7acaf0ba130be140393a56efb0a50.png",
         'url_prefix': 'https://msc.alfaopt.com',
         # 'date_format': '%d-%m-%Y',
         'root_': {
@@ -228,6 +231,7 @@ data = [
         'name': 'teremonline.ru',
         'id': 9,
         'url': "https://www.teremonline.ru/novosti/",
+        'default_image': "https://www.teremonline.ru/img/svg/logo.svg",
         'url_prefix':'https://www.teremonline.ru',
         'root_': {
             'selector': ".snp-items",

@@ -7,6 +7,7 @@ data = [
         'id': '0',
         'name': 'Schneider Electric',
         'url': "https://www.se.com/ru/ru/about-us/newsroom/news/",
+        'default_image': "https://www.se.com/ww/en/assets/wiztopic/615aeb0184d20b323d58575e/Schneider-Electric-logo-jpg-.png",
         'url_prefix': "https://www.se.com",
         'root_': {
             'selector': "section.sdl-wiztopic-press-releases",
@@ -74,6 +75,7 @@ data = [
         'id': '2',
         'name': 'ICP-DAS',
         'url': "https://icp-das.ru/blogs/news",
+        'default_image': "https://cdn.shopify.com/s/files/1/0554/3149/5732/files/logo_102x80.png?v=1636645940",
         'url_prefix': "https://icp-das.ru",
         'date_format': '.%m.%d%Y',
         'root_': {
@@ -108,6 +110,7 @@ data = [
         'id': '3',
         'name': 'MOXA',
         'url': "https://moxa.ru/novosti/",
+        'default_image': "https://moxa.ru/templates/demomarket/images/logo/moxa-logo.svg",
         'url_prefix': "https://moxa.ru",
         'root_': {
             'selector': "div.newpage",
@@ -141,6 +144,7 @@ data = [
         'id': '4',
         'name': 'Прософт-Системы',
         'url': "https://prosoftsystems.ru/news",
+        'default_image': "https://prosoftsystems.ru/assets/dfbec0/images/Site_logo_rus.png",
         'url_prefix': "https://prosoftsystems.ru",
         'root_': {
             'selector': "div.articles",
@@ -174,6 +178,7 @@ data = [
         'id': '5',
         'name': 'Mitsubishi Electric',
         'url': "https://ru.mitsubishielectric.com/ru/news/index.html",
+        'default_image': "https://ru.mitsubishielectric.com/mobile0c9a66/sites/ru_ssl/assets-gs18/img/logo.svg",
         'url_prefix': "https://ru.mitsubishielectric.com",
         'root_': {
             'selector': "ul.gs18-BorderedDateLinkList",
@@ -207,6 +212,7 @@ data = [
         'id': '6',
         'name': 'Tibbo Systems',
         'url': "https://blog.aggregate.digital/ru/category/company-news/",
+        'default_image': "https://blog.aggregate.digital/wp-content/themes/twentyfifteen/images/logo-tibbo-header-unactive.png",
         'date_format': '.%m.%d%Y',
         'root_': {
             'selector': "main.site-main",

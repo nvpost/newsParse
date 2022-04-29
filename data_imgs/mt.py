@@ -5,6 +5,7 @@ data = [
           'id': '0',
           'name': 'Rittal',
           'url': "https://www.rittal.com/ru-ru/content/ru/unternehmen/presse/pressemeldungen/pressemeldungen.jsp",
+          'default_image': "https://www.rittal.com/ru-ru/content/media/layout/logos/logo_rittal.png",
           'url_prefix': 'https://www.rittal.com/ru-ru/content/ru/unternehmen/presse/pressemeldungen/',
           'root_': {
               'selector': "div.cnt-inner",
@@ -38,6 +39,7 @@ data = [
           'id': '1',
           'name': 'Pfannenberg',
           'url': "https://www.pfannenberg.com/ru/novosti-pressa/novosti-i-press-relizy/dateFilter/2022/",
+          'default_image': "https://www.pfannenberg.com/typo3conf/ext/hn_pfannenberg/Resources/Public/Images/Pfannenberg_Logo_RU_RGB.svg",
           'url_prefix': 'https://www.pfannenberg.com',
           'root_': {
               'selector': "div.bordered-list",
@@ -71,6 +73,7 @@ data = [
           'id': '2',
           'name': 'DKC',
           'url': "https://www.dkc.ru/ru/about/news/",
+          'default_image': "https://www.dkc.ru/upload/iblock/cb2/cb24b03c7e286a3b27b45d1eafb0e972.jpg",
           'url_prefix': 'https://www.dkc.ru',
           'root_': {
               'selector': "div.news",
@@ -193,6 +196,7 @@ data = [
           'id': '6',
           'name': 'Pizzato',
           'url': "https://pizzato.su/novosti.html",
+          'default_image': "https://pizzato.su/images/logos/53/logo.png",
           'root_': {
               'selector': "div.ty-pagination-container",
               'position': 0
@@ -254,6 +258,7 @@ data = [
           'id': '8',
           'name': 'Tekfor',
           'url': "http://www.tekfor.ru/info/news/",
+          'default_image': "http://www.tekfor.ru/bitrix/templates/aspro-allcorp/images/tekfor_logo_2011.svg",
           'url_prefix': 'http://www.tekfor.ru',
           'root_': {
               'selector': "div.group-content",
@@ -287,6 +292,7 @@ data = [
           'id': '9',
           'name': 'Briswik',
           'url': "https://briswik.ru/category/novosti-i-stati/",
+          'default_image': "https://briswik.ru/wp-content/uploads/cropped-logo-1980x674.png",
           'url_prefix': '',
           'root_': {
               'selector': "main#site-content",
@@ -361,6 +367,7 @@ data = [
         'id': '0',
         'name': 'Werma',
         'url': "https://www.werma.com/en/news/news.php",
+        'default_image': "https://www.werma.com/gfx/werma_logo.png",
         'url_prefix': 'https://www.werma.com',
         'root_': {
             'selector': "div.news",
@@ -382,7 +389,7 @@ data = [
         'image_url': {
             'selector': "div.img",
             'position': 0,
-            'image_prefix': 'https://deltronics.ru/'
+            'image_prefix': 'https://www.werma.com'
         }
     }
 ]

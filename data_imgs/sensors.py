@@ -6,6 +6,7 @@ data = [
         'id': '0',
         'name': 'ТЕККНОУ',
         'url': "https://www.tek-know.ru/news/",
+        'default_image': "https://www.tek-know.ru/images/logo.png",
         'url_prefix': 'https://www.tek-know.ru',
         'root_': {
             'selector': "div.news-list",
@@ -101,6 +102,7 @@ data = [
         'id': '3',
         'name': 'Phoenix contact',
         'url': "https://www.phoenixcontactpro.ru/about/news/",
+        'default_image': "https://www.phoenixcontactpro.ru/bitrix/templates/phoenixcontact/images/logo.png",
         'url_prefix': 'https://www.phoenixcontactpro.ru',
         'root_': {
             'selector': "div.content-block",
@@ -137,6 +139,7 @@ data = [
         'id': '4',
         'name': 'PEPPERL_FUCHS',
         'url': "https://www.pepperl-fuchs.com/russia/ru/22690.htm",
+        'default_image': "https://www.pepperl-fuchs.com/data/general/img/pf_logo.svg",
         'url_prefix': 'https://www.pepperl-fuchs.com',
         'root_': {
             'selector': "div.container_news_box",
@@ -198,6 +201,7 @@ data = [
         'id': '6',
         'name': 'Huba Control',
         'url': "https://www.hubacontrol.com/ru/biznes/novosti",
+        'default_image': "https://www.hubacontrol.com/fileadmin/_processed_/7/6/csm_logo_050e343e8e.png",
         'url_prefix': 'https://www.hubacontrol.com',
         'root_': {
             'selector': "div.news-list-wrapper",
@@ -231,6 +235,7 @@ data = [
         'id': '7',
         'name': 'Е_Е',
         'url': "https://www.epluse.com/press/press-releases/",
+        'default_image': "https://www.epluse.com/typo3conf/ext/theme/Resources/Public/Template/img/epluselogo.svg",
         'url_prefix': 'https://www.epluse.com',
         # 'root_': {
         #     'selector': "ul.news-list-container",
@@ -295,6 +300,7 @@ data = [
         'id': '9',
         'name': 'Эксис',
         'url': "https://www.eksis.ru/news/company/",
+        'default_image': "https://www.eksis.ru/bitrix/templates/eksis/images/logo.png",
         'url_prefix': 'https://www.eksis.ru',
         'root_': {
             'selector': "div.centcol",
@@ -359,6 +365,7 @@ data = [
         'id': '11',
         'name': 'APLISENS',
         'url': "https://www.aplisens.ru/news/",
+        'default_image': "https://www.aplisens.ru/bitrix/templates/main/assets/img/logo.png",
         'url_prefix': 'https://www.aplisens.ru',
         'root_': {
             'selector': "div.row",
@@ -394,6 +401,7 @@ data = [
         'id': '12',
         'name': 'Аналитприбор',
         'url': "https://www.analitpribor-smolensk.ru/company/novosti/",
+        'default_image': "https://www.analitpribor-smolensk.ru/templates/analit/img/logo.svg",
         'url_prefix': 'https://www.analitpribor-smolensk.ru',
         'root_': {
             'selector': "div.news-list",
@@ -461,6 +469,7 @@ data = [
         'id': '14',
         'name': 'Vega',
         'url': "https://vega-rus.ru/news/",
+        'default_image': "https://vega-rus.ru/bitrix/templates/vega%20shablon%202/images/h2017.jpg",
         'url_prefix': 'https://vega-rus.ru',
         'root_': {
             'selector': "div.news-list",
@@ -494,6 +503,7 @@ data = [
         'id': '15',
         'name': 'Вакууммаш',
         'url': "https://vakuummash.ru/category/press-center/",
+        'default_image': "https://vakuummash.ru/wp-content/uploads/2021/02/logo.png",
         'url-prefix': '',
         # 'root_': {
         #     'selector': "div.news-block",
@@ -557,6 +567,7 @@ data = [
         'id': '17',
         'name': 'Русавтоматизация',
         'url': "https://rusautomation.ru/company/news/",
+        'default_image': "https://rusautomation.ru/upload/CNext/13c/13ce1a6c1b62bc940150d42aa2c2604a.png",
         'url_prefix': 'https://rusautomation.ru',
         'root_': {
             'selector': "div.news-blog-custom",
@@ -620,6 +631,7 @@ data = [
         'id': '19',
         'name': 'РИЗУР',
         'url': "https://rizur.ru/company/news/",
+        'default_image': "https://rizur.ru/images/rizur_logo.png",
         'url_prefix': 'https://rizur.ru',
         'root_': {
             'selector': "div.news-list",
@@ -655,6 +667,7 @@ data = [
         'id': '20',
         'name': 'Рэлсиб',
         'url': "https://relsib.com/news",
+        'default_image': "https://relsib.com/frontend/img/logo.png",
         'url-prefix': '',
         # 'root_': {
         #     'selector': "div.col-md-12",
@@ -718,6 +731,7 @@ data = [
         'id': '22',
         'name': 'Pribor-r',
         'url': "https://pribor-r.ru/news/",
+        'default_image': "https://pribor-r.ru/themes/pribor/img/logo2.png",
         'url_prefix': 'https://pribor-r.ru',
         'root_': {
             'selector': "ul.news-list",
@@ -781,6 +795,7 @@ data = [
         'id': '24',
         'name': 'Полтраф СНГ',
         'url': "https://poltraf.ru/about/news/",
+        'default_image': "https://poltraf.ru/upload/CMax/f71/f71e65e2985cd2b2026fb2bb7f50c916.svg",
         'url_prefix': 'https://poltraf.ru',
         'root_': {
             'selector': "div.s_4",
@@ -842,6 +857,7 @@ data = [
         'id': '25',
         'name': 'Мераприбор',
         'url': "https://merapribor.ru/info/news/",
+        'default_image': "https://merapribor.ru/logo.svg",
         'url_prefix': 'https://merapribor.ru',
         'root_': {
             'selector': "div.items",
@@ -906,6 +922,7 @@ data = [
         'id': '27',
         'name': 'КЕАЗ',
         'url': "https://keaz.ru/company/press-center/news",
+        'default_image': "https://keaz.ru/assets/images/logo.png",
         'url-prefix': '',
         'root_': {
             'selector': "div.content",
@@ -939,6 +956,7 @@ data = [
         'id': '28',
         'name': 'ИЗМЕРКОН («Измерение и Контроль») KELLER',
         'url': "https://izmerkon.ru/about/news/",
+        'default_image': "https://izmerkon.ru/userfiles/logo.png",
         'url_prefix': 'https://izmerkon.ru',
         'root_': {
             'selector': "div.rows",
@@ -1003,6 +1021,7 @@ data = [
         'id': '30',
         'name': 'Dwyer',
         'url': "https://dwyer.ru/nashi-novosti",
+        'default_image': "https://sun9-60.userapi.com/s/v1/if1/iyGo8ggR4anxJk8a9zJO2TCSOJyr8S3Me1m2e7dag5l08tt5CXiMfSYWiaOQY_CYaUSTbnY4.jpg?size=600x600&quality=96&type=album",
         'url_prefix': 'https://dwyer.ru',
         'root_': {
             'selector': "div.blog",
@@ -1065,6 +1084,7 @@ data = [
         'id': '32',
         'name': 'Компания «БД»',
         'url': "https://bdrosma.ru/news/",
+        'default_image': "https://bdrosma.ru/img/style/logotype.png",
         'url_prefix': 'https://bdrosma.ru/',
         'root_': {
             'selector': "main.news_list",
@@ -1098,6 +1118,7 @@ data = [
         'id': '33',
         'name': 'Альбатрос',
         'url': "https://albatros.ru/news/archive/",
+        'default_image': "https://albatros.ru/local/templates/albatros/images/albatros-logo.svg",
         'url_prefix': 'https://albatros.ru',
         'root_': {
             'selector': "div.front_news_list",
@@ -1131,6 +1152,7 @@ data = [
         'id': '34',
         'name': 'Yokogawa',
         'url': "http://www.yokogawa.ru/news/",
+        'default_image': "http://www.yokogawa.ru/bitrix/templates/yokogawa/img/logo.png",
         'url_prefix': 'http://www.yokogawa.ru',
         # 'root_': {
         #     'selector': "div.news_list",
@@ -1195,6 +1217,7 @@ data = [
         'id': '36',
         'name': 'Эталон Омск',
         'url': "http://www.omsketalon.ru/novosti",
+        'default_image': "http://www.omsketalon.ru/sites/default/files/logo_s_0.png",
         'url_prefix': 'http://www.omsketalon.ru',
         'date_format': '%d.%m.%y',
         # 'root_': {
@@ -1230,6 +1253,7 @@ data = [
         'id': '37',
         'name': 'ООО «Стэнли» (Корунд)',
         'url': "https://stenli.ru/novosti",
+        'default_image': "https://stenli.ru/thumb/2/im4-ofeTx5bfQc1j1sUHKQ/50r50/d/223094_5473.png",
         'url_prefix': 'https://stenli.ru',
         'date_format': '%d.%m.%Y %H:%M',
         'root_': {
@@ -1264,6 +1288,7 @@ data = [
         'id': '38',
         'name': 'Теплоприбор Челябинск',
         'url': "http://tpchel.ru/articles/categories/1",
+        'default_image': "http://tpchel.ru/images/usr/tpl/header-logo.png",
         'url_prefix': 'http://tpchel.ru',
         'date_format':'%d.%m.%Y %H:%M',
         'root_': {
@@ -1331,6 +1356,7 @@ data = [
         'id': '40',
         'name': 'Ленпромавтоматика',
         'url': "http://lpadevice.ru/new/",
+        'default_image': "http://lpadevice.ru/images/design/logos/inner.gif",
         'url-prefix': '',
         'root_': {
             'selector': "table.newstable",
@@ -1430,6 +1456,7 @@ data = [
         'id': '1',
         'name': 'CarelUA',
         'url': "https://www.carel.ua/news",
+        'default_image': "https://www.carel.ua/new-carel-com-theme/images/carel/ovale_rosso_CAREL.jpg",
         'url_prefix': '',
         'date_format': '%d.%m.%Y',
         'root_': False,

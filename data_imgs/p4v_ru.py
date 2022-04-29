@@ -5,6 +5,7 @@ data = [
         'id': '0',
         'name': 'Веспер',
         'url': "https://www.vesper.ru/presscenter/news-events/",
+        'default_image': "https://www.vesper.ru/local/templates/vesper/images/header/vesper-logo.png",
         'url_prefix': 'https://www.vesper.ru',
         'root_': {
             'selector': "div.b-news-list__list",
@@ -96,6 +97,7 @@ data = [
         'id': '3',
         'name': 'Вектор ВС',
         'url': "https://vector-vs.com/blog",
+        'default_image': "https://vector-vs.com/uploads/thumb/0/about_storage/532-308_img_6615_1.jpg",
         'url_prefix': 'https://vector-vs.com',
         'root_': {
             'selector': "div.blog__list",

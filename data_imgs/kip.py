@@ -6,6 +6,7 @@ data = [
         'id': 1,
         'name': 'Контравт',
         'url': "https://www.contravt.ru/news-KontrAvt",
+        'default_image': "https://www.contravt.ru/_data/objects/0000/8533/icon.png",
         'url_prefix': 'https://www.contravt.ru',
         'root_': {
             'selector': "table.cell_standart_icon",
@@ -39,6 +40,7 @@ data = [
         'id': 2,
         'name': 'Atonics',
         'url': "https://www.autonics.com/company/ntt/news/list",
+        'default_image': "https://www.autonics.com/web/2018/04/13/12/7/39/5af55728-fa96-4a20-b122-29f5631bcb9d.png",
         'url_prefix': 'https://www.autonics.com/company/ntt/news/view/',
         'date_format': '%Y.%m.%d',
         'root_': {
@@ -79,6 +81,7 @@ data = [
         'id': 3,
         'name': 'Deltronics',
         'url': "https://deltronics.ru/news/",
+        'default_image': "https://deltronics.ru/img/logo3.jpg",
         'url_prefix': "https://deltronics.ru/",
         'root_': {
             'selector': "div.row.row-30",
@@ -141,7 +144,7 @@ data = [
         'name': 'Трид',
         'id': 5,
         'url': "https://tridpm.ru/news",
-
+        'default_image': "https://tridpm.ru/assets/img/sprite.png",
         'root_': {
             'selector': "div.news-posts-wrapper",
             'position': 0
@@ -199,6 +202,7 @@ data = [
         'name': 'elemer',
         'id': 7,
         'url': "https://www.elemer.ru/news/",
+        'default_image': "https://www.elemer.ru/upload/CAllcorp2/bce/tt6yg9dlro63s0g9mrqe60mpk1pf39jk/logo-30-let.png",
         'url_prefix': 'https://www.elemer.ru',
         'root_': {
             'selector': "div.news-list",
@@ -233,7 +237,7 @@ data = [
         'name': 'Термодат',
         'id': 8,
         'url': "https://termodat.ru/information/news/",
-        'default_image': "",
+        'default_image': "https://termodat.ru/bitrix/images/footer_logo.gif",
         'url_prefix': 'https://termodat.ru',
         'root_': {
             'selector': ".bx_news",

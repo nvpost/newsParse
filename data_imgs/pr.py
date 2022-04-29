@@ -6,6 +6,7 @@ data = [
         'name': 'EFK',
         'type': 'news',
         'url': "https://ekfgroup.com/about/news/category/new_products",
+        'default_image': "https://ekfgroup.com/images/logo-ekf.svg",
         'url_prefix': 'https://ekfgroup.com',
         'root_': False,
         'items_': {
@@ -37,6 +38,7 @@ data = [
         'name': 'EFK',
         'type': 'events',
         'url': "https://ekfgroup.com/about/news/category/events",
+        'default_image': "https://ekfgroup.com/images/logo-ekf.svg",
         'url_prefix': 'https://ekfgroup.com',
         'root_': False,
         'items_': {
@@ -68,6 +70,7 @@ data = [
         'name': 'EFK',
         'type': 'services',
         'url': "https://ekfgroup.com/about/news/category/services",
+        'default_image': "https://ekfgroup.com/images/logo-ekf.svg",
         'url_prefix': 'https://ekfgroup.com',
         'root_': False,
         'items_': {
@@ -99,6 +102,7 @@ data = [
         'name': 'EFK',
         'type': 'promo',
         'url': "https://ekfgroup.com/about/news/category/promo",
+        'default_image': "https://ekfgroup.com/images/logo-ekf.svg",
         'url_prefix': 'https://ekfgroup.com',
         'root_': False,
         'items_': {
@@ -130,6 +134,7 @@ data = [
         'name': 'EFK',
         'type': 'press',
         'url': "https://ekfgroup.com/about/news/category/press",
+        'default_image': "https://ekfgroup.com/images/logo-ekf.svg",
         'url_prefix': 'https://ekfgroup.com',
         'root_': False,
         'items_': {
@@ -160,6 +165,7 @@ data = [
         'place': 'ru',
         'name': 'EFK_projects',
         'url': "https://ekfgroup.com/about/news/category/projects",
+        'default_image': "https://ekfgroup.com/images/logo-ekf.svg",
         'url_prefix': 'https://ekfgroup.com',
         'root_': False,
         'items_': {
@@ -330,6 +336,7 @@ data = [
         'place': 'ru',
         'name': 'Omron',
         'url': "https://industrial.omron.ru/ru/news-events/news",
+        'default_image': "https://industrial.omron.ru/images/omron-logo.svg",
         'url_prefix': 'https://industrial.omron.ru',
         'root_': {
             'selector': "section.magic-card",
@@ -476,6 +483,7 @@ data = [
     'id': '0',
     'name': 'СВ АЛЬТЕРА',
     'url': "https://www.svaltera.ua/press-center/news/",
+    'default_image': "https://www.svaltera.ua/press-center/media-materials/svaltera_simple_ua_ru.png",
     'url_prefix': 'https://www.svaltera.ua',
     'date_format': '%d.%m.%Y',
     'root_': {
@@ -511,6 +519,7 @@ data = [
     'id': '1',
     'name': 'Промавтоматика',
     'url': "https://res.ua/rus/news-ru",
+    'default_image': "https://res.ua/image/catalog/logo-res-ua-uk.jpg",
     'url_prefix': '',
     'date_format': '%d.%m.%Y',
     'root_': {
@@ -546,6 +555,7 @@ data = [
     'id': '2',
     'name': 'Промавтоматика Винница',
     'url': "https://www.pa.ua/novyny/",
+    'default_image': "https://www.pa.ua/wp-content/uploads/2020/06/logo-sl.svg",
     'url_prefix': '',
     'date_format': '%d.%m.%Y',
     'root_': {
@@ -580,6 +590,7 @@ data = [
     'id': '3',
     'name': 'Delta',
     'url': "https://delta-electronics.com.ua/news",
+    'default_image': "https://images.prom.ua/13454807_w120_h120_chastotnye-preobrazovateli-servo.jpg",
     'url_prefix': '',
     'date_format': '%d.%m.%Y',
     'root_': {

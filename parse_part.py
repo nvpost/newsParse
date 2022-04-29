@@ -30,6 +30,7 @@ userAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML
 addCounter = 0
 
 an_chunks = [
+    agregator.data,
     op_ru.data,
     pr.data,
     kip.data,
@@ -37,7 +38,7 @@ an_chunks = [
     p4v_ru.data,
     sensors.data,
     mt.data,
-    agregator.data
+
 ]
 
 

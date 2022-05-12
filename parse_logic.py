@@ -57,6 +57,7 @@ def main_logic(el):
         else:
             items = soup.select(el['items_']['selector'])
     except:
+        items = soup.select(el['items_']['selector'])
         print("Не получили rootElem для", site_id)
 
     newsArr = []

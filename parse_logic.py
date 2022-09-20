@@ -1,5 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
+import datetime
 
 import func
 import rules
@@ -83,9 +84,11 @@ def main_logic(el):
         try:
             date = func.changeSymbol(i.select(el['date_']['selector'])[el['date_']['position']].text)
             # Исключения для даты
+
             date = rules.dateRules(el['name'], date, title)
-            print(date)
+
             date = func.cleanDate(date)
+
         except:
             pass
 
@@ -93,6 +96,10 @@ def main_logic(el):
 
         if (len(date) > 2):
             date = func.df(date, _format)
+            print(date)
+            # print(type(date))
+        # else:
+        #     date=datetime.datetime.min
 
         full_link = url_prefix + link
 

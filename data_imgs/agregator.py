@@ -31,7 +31,8 @@ data = [
             'selector': "img",
             'position': 0
         }
-    }, {
+    },
+    {
         'category': 'agregator',
         'dop_cat': ['agregator'],
         'place': 'ru',
@@ -64,7 +65,8 @@ data = [
             'selector': "a.obj-10__thumb > img",
             'position': 0
         }
-    }, {
+    },
+    {
         'category': 'agregator',
         'dop_cat': ['agregator'],
         'place': 'ru',
@@ -137,6 +139,7 @@ data = [
         'id': '4',
         'name': 'Elec Альтернативная энергетика',
         'url': "https://www.elec.ru/news/alternativnaya-energetika/",
+        'default_image': "https://www.arcweb.com/themes/custom/archadvisory/images/logo-white.png",
         'url_prefix': 'https://www.elec.ru',
         'date_format': '%d.%m.%Yв%H:%M',
         'root_': {
@@ -371,7 +374,7 @@ data = [
         'url': "https://www.arcweb.com/blog/arcwire-industry-news",
         'default_image': "https://www.arcweb.com/themes/custom/archadvisory/images/logo-white.png",
         'url_prefix': 'https://www.arcweb.com/',
-        'date_format': '%b%d%Y',
+        'date_format': '.%m.%d%Y',
         'root_': {
             'selector': "div.blog-listing",
             'position': 0
@@ -482,7 +485,8 @@ data = [
             'selector': "h3 > a",
             'position': 0
         }
-    },{
+    },
+    {
         'category': 'agregator',
         'dop_cat': ['agregator'],
         'place': 'else',
@@ -516,7 +520,8 @@ data = [
             'selector': "img.media-object",
             'position': 0
         }
-    },{
+    },
+    {
         'category': 'agregator',
         'dop_cat': ['agregator'],
         'place': 'else',
@@ -524,7 +529,7 @@ data = [
         'name': 'Manufacturing Tomorrow',
         'url': "https://www.manufacturingtomorrow.com/articlefeed/automation-networking/",
         'url_prefix': 'https://www.manufacturingtomorrow.com',
-        'date_format': '%m.%d.%y%H',
+        'date_format': '%M.%d.%y',
         'root_': {
             'selector': "div.page-content",
             'position': 0
@@ -551,6 +556,7 @@ data = [
             'position': 0,
             'image_prefix': 'https://www.manufacturingtomorrow.com'
         }
+
     },{
         'category': 'agregator',
         'dop_cat': ['agregator'],

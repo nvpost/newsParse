@@ -127,7 +127,7 @@ for el in agregator.data:
 # Исключения
         if (el['name'] == "Endress"):
             date = title.split(' ')[0]
-            print(date)
+            # print(date)
         # Исключения
 
 

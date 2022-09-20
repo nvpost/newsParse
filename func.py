@@ -104,6 +104,8 @@ def df(date_str, format):
     # print('---')
 
     # nd = datetime.datetime.strptime(date_str, format)
+
+
     try:
         nd = datetime.datetime.strptime(date_str, format)
     except:

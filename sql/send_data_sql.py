@@ -8,18 +8,30 @@ db = pymysql.connect(host="localhost",
                       charset='utf8mb4',
                       cursorclass=pymysql.cursors.DictCursor)
 
-# db = config.db
+# db = pymysql.connect(host="localhost",
+#                       user='root',
+#                       password='mysql',
+#                       database='news_site',
+#                       charset='utf8mb4',
+#                       cursorclass=pymysql.cursors.DictCursor)
+
 
 cursor = db.cursor()
 
 addCounter = 0
 
+
+def add_logs(site_id, kolvo):
+    query = """INSERT INTO logs(site_id, kolvo)
+    values(%s, %s)"""
+    cursor.execute(query, (site_id, kolvo))
+    db.commit()
+
 def add_data(newsArr, site_id):
     global addCounter
+
     query = """INSERT INTO news(site_id, group_id, lang, news_date, title, link, status, image_url)
     values(%s, %s, %s, %s, %s, %s, %s, %s)"""
-
-
 
     cursor.execute("SELECT * FROM news WHERE site_id=%s", site_id)
 
@@ -37,16 +49,18 @@ def add_data(newsArr, site_id):
         if addFlag:
             print('добавляем ', i[4])
             dataToAdd.append(i)
-        # else:
-        #     print('недобавляем')
 
 
+    kolvo = len(dataToAdd)
+    addCounter = addCounter + kolvo
+    if(kolvo>0):
+        try:
+            cursor.executemany(query, dataToAdd)
+            db.commit()
+        except:
+            pass
 
-    addCounter = addCounter + len(dataToAdd)
-    if(len(dataToAdd)>0):
-        # print(dataToAdd)
-        cursor.executemany(query, dataToAdd)
-        db.commit()
+    add_logs(site_id, kolvo)
 
 
 # Добавить лого для донора
@@ -62,6 +76,8 @@ def add_donor(donorArr):
         print('добавили', name)
         cursor.execute(query, donorArr)
         db.commit()
+
+
 
 
 def updateImg(image_url, title, site_id):

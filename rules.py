@@ -1,3 +1,5 @@
+from datetime import datetime, timedelta
+
 def dateRules(name, date, title=False):
     if (name == "Atonics"):
         date = date.split(' ')[0]
@@ -11,6 +13,19 @@ def dateRules(name, date, title=False):
         date = date.replace('—', '2022')
     if (name == "Endress"):
         date = title.split(' ')[0]
+    if (name == "Manufacturing Tomorrow"):
+        date = date.split(',')[0]
+    if (name == "Automate"):
+        date = date.split(' ')[0]
+
+    if ("Elec " in name):
+        print('это элек')
+        if 'сегодня' in date.lower():
+            td = datetime.today()
+            date = td.strftime("%d.%m.%Y")
+        if 'вчера' in date.lower():
+            td = datetime.now() - timedelta(days=1)
+            date = td.strftime("%d.%m.%Y")
 
     if (name == "Е_Е"):
         month_list = ['January', 'February', 'March', 'April', 'May', 'June',
@@ -19,6 +34,7 @@ def dateRules(name, date, title=False):
             old = month_list[m]
             date = date.replace(old, str(m + 1) + '.')
 
+    print(date)
     return date
         
 def imgRules(el, i, image_prefix):
@@ -54,5 +70,8 @@ def imgRules(el, i, image_prefix):
     except:
         image_url = el['default_image']
     if image_url == '':
-        image_url = el['default_image']
+        try:
+            image_url = el['default_image']
+        except:
+            image_url = ''
     return image_url

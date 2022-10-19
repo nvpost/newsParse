@@ -98,8 +98,8 @@ def main_logic(el):
             date = func.df(date, _format)
             print(date)
             # print(type(date))
-        # else:
-        #     date=datetime.datetime.min
+        else:
+            date=datetime.datetime.min
 
         full_link = url_prefix + link
 

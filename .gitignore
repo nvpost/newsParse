@@ -1,5 +1,6 @@
 .idea
 __pycache__
+venv
 data/__pycache__/
 sql/__pycache__/
 sql/config.py

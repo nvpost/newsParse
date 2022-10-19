@@ -1,9 +1,6 @@
-from bs4 import BeautifulSoup
-import requests
-import datetime
-import func
+
 import parse_logic
-from sql import send_data_sql
+
 
 
 from data_imgs import sp_ru
@@ -23,18 +20,17 @@ userAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML
 addCounter = 0
 
 an_chunks = [
-    # data.data
+    data.data,
     agregator.data,
 
-    # op_ru.data,
-    # pr.data,
-    # kip.data,
-    # sp_ru.data,
-    # p4v_ru.data,
-    #
-    # sensors.data,
-    # mt.data,
+    op_ru.data,
+    pr.data,
+    kip.data,
+    sp_ru.data,
+    p4v_ru.data,
 
+    sensors.data,
+    mt.data,
 ]
 
 

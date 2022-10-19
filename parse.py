@@ -1,7 +1,7 @@
 from bs4 import BeautifulSoup
 import requests
 import datetime
-import func
+
 
 from sql import send_data_sql
 

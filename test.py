@@ -13,7 +13,7 @@ from data import p4v_ru
 
 from data import agregator
 
-import func
+import func_old
 
 
 # from data import sensors
@@ -110,9 +110,9 @@ for i in items:
             date = date.split(' ')[0]
 
         if(el['name']=="Automation World Products") or (el['name']=="999automation"):
-            date = date.replace('th', '.')
-            date = date.replace('nd', '.')
-            date = date.replace('st', '.')
+            date = date.replace('th', '.', 1)
+            date = date.replace('nd', '.', 1)
+            date = date.replace('st', '.', 1)
         if(el['name']=="КИПиС") or (el['name']=="Automate"):
             date = date.split('|')[0]
         if(el['name']=="Manufacturing Tomorrow"):
